@@ -18,6 +18,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
+  "homepage": "http://davidpaulsson.github.io/sen-street-kitchen",
   "main": "index.js",
   "license": "MIT"
 }
