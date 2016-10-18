@@ -3,6 +3,8 @@ import React from 'react';
 import Dishes from './../components/Dishes';
 
 import restaurants from './../data/restaurants.json';
+import './Restaurant.css';
+
 
 class Restaurant extends React.Component {
     constructor(props) {
@@ -32,18 +34,22 @@ class Restaurant extends React.Component {
         return (
             <div>
                 {restaurant ? (
-                    <div>
-                        <h1>{ restaurant.name }</h1>
+                    <div className="restaurant">
+                        <div className="restaurant__city">
+                            { restaurant.address.city }
+                        </div>
 
-                        { restaurant.address.street }<br/>
-                        { restaurant.address.zipCode } { restaurant.address.city }<br/>
-                        { restaurant.address.city }, { restaurant.address.country }
+                        <h1 className="restaurant__name">
+                            { restaurant.name }
+                        </h1>
 
-                        <hr/>
-                        foodora? { restaurant.foodora ? 'yes' : 'no' }<br/>
-                        cashless? { restaurant.cashless ? 'yes' : 'no' }
-
-                        <hr />
+                        <div className="opening-hours">
+                            <span className="opening-hours__days">Mon-Fri</span> <span className="opening-hours__period">{ restaurant.openingHours[0] }</span>
+                            <span className="opening-hours__sep">|</span>
+                            <span className="opening-hours__days">Sat</span> <span className="opening-hours__period">{ restaurant.openingHours[5] }</span>
+                            <span className="opening-hours__sep">|</span>
+                            <span className="opening-hours__days">Sun</span> <span className="opening-hours__period">{ restaurant.openingHours[6] }</span>
+                        </div>
 
                         <Dishes dishes={ restaurant.menu } />
                     </div>

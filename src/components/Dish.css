@@ -1,9 +1,7 @@
 .dish {
-    display: inline-block;
-    width: 25%;
     margin-bottom: 2em;
+    padding: 0 1em;
     text-align: center;
-    flex-grow: 1;
 }
 
 .dish__image {
@@ -15,4 +13,12 @@
 .dish__price {
     font-weight: 600;
     color: #e98457;
+}
+
+@media (min-width: 600px) {
+    .dish {
+        display: inline-block;
+        width: 25%;
+        flex-grow: 1;
+    }
 }

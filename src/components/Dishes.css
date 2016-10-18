@@ -1,4 +1,6 @@
-.dishes {
-    display: flex;
-    flex-wrap: wrap;
+@media (min-width: 600px) {
+    .dishes {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

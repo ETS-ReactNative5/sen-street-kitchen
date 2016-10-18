@@ -14,7 +14,7 @@ class Dish extends React.Component {
     render() {
         const { dish } = this.props;
 
-        const imageUrl = `${process.env.PUBLIC_URL}/${slug(dish.name).toLowerCase()}.svg`;
+        const imageUrl = `${process.env.PUBLIC_URL}/svg/${slug(dish.name).toLowerCase()}.svg`;
 
         return (
             <div className="dish">
