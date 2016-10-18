@@ -1,0 +1,18 @@
+.dish {
+    display: inline-block;
+    width: 25%;
+    margin-bottom: 2em;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.dish__image {
+    width: auto;
+    height: 16px;
+    margin: 0 auto;
+}
+
+.dish__price {
+    font-weight: 600;
+    color: #e98457;
+}

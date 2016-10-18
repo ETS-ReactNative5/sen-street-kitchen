@@ -12,7 +12,8 @@ class Menu extends React.Component {
             <div>
                 Menu
                 <Link to="/about-us">About Us</Link>
-                <Link to="/restaurants">Restaurants</Link>
+                <Link to="/restaurants/kungsbron-8">kungsgatan-8</Link>
+                <Link to="/restaurants/regeringsgatan-26">regeringsgatan-26</Link>
             </div>
         );
     }

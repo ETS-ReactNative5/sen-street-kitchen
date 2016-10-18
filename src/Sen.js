@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 class Sen extends Component {
     render() {
@@ -8,6 +9,7 @@ class Sen extends Component {
             <div>
                 <Header />
                 {this.props.children}
+                <Footer />
             </div>
         );
     }

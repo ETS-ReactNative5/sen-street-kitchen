@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import Restaurant from './pages/Restaurant';
 import NoMatch from './pages/NoMatch';
 
+import 'normalize-css';
 import './global.css';
 
 ReactDOM.render(
@@ -16,11 +17,7 @@ ReactDOM.render(
             <Route path="about-us" component={About}/>
             <Route path="restaurants/:address" component={Restaurant} />
             <Route path="contact-us" component={Contact} />
-
-            {/*<Route path="users" component={Users}>
-            <Route path="/user/:userId" component={User}/>
-            </Route>*/}
-
+            <Route path="work-at-sen" component={Contact} />
             <Route path="*" component={NoMatch}/>}
         </Route>
     </Router>,

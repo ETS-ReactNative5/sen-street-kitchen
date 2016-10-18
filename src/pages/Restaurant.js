@@ -1,34 +1,60 @@
 import React from 'react';
-import Titelize from './../helpers/titelize';
 
-class Restaurants extends React.Component {
+import Dishes from './../components/Dishes';
+
+import restaurants from './../data/restaurants.json';
+
+class Restaurant extends React.Component {
     constructor(props) {
         super(props);
-        this.displayName = 'Restaurants';
-
-        const { address } = this.props.params;
-
+        this.displayName = 'Restaurant';
         this.state = {
-            slug: address,
-            title: Titelize(address)
+            restaurant: null
         };
     }
 
+    getRestaurant(slug) {
+        const restaurant = restaurants.find(r => r.slug === slug);
+        this.setState({ restaurant });
+    }
+
+    componentWillMount() {
+        this.getRestaurant(this.props.params.address);
+    }
+
+    componentWillReceiveProps(nextProps) {
+        this.getRestaurant(nextProps.params.address);
+    }
+
     render() {
-        const { slug, title } = this.state;
+        const { restaurant } = this.state;
 
         return (
             <div>
-                Restaurant
-                <ul>
-                    <li>{ slug }</li>
-                    <li>{ title }</li>
-                </ul>
+                {restaurant ? (
+                    <div>
+                        <h1>{ restaurant.name }</h1>
+
+                        { restaurant.address.street }<br/>
+                        { restaurant.address.zipCode } { restaurant.address.city }<br/>
+                        { restaurant.address.city }, { restaurant.address.country }
+
+                        <hr/>
+                        foodora? { restaurant.foodora ? 'yes' : 'no' }<br/>
+                        cashless? { restaurant.cashless ? 'yes' : 'no' }
+
+                        <hr />
+
+                        <Dishes dishes={ restaurant.menu } />
+                    </div>
+                ) : null}
             </div>
         );
     }
 }
 
-Restaurants.propTypes = {};
+Restaurant.propTypes = {
+    params: React.PropTypes.object
+};
 
-export default Restaurants;
+export default Restaurant;

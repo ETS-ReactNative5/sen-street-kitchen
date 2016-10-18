@@ -2,6 +2,10 @@ import React from 'react';
 import TopBar from './TopBar';
 import Menu from './Menu';
 
+import background from './../assets/concrete.jpg';
+
+import './Header.css';
+
 class Header extends React.Component {
     constructor(props) {
         super(props);
@@ -10,7 +14,7 @@ class Header extends React.Component {
 
     render() {
         return (
-            <div>
+            <div style={{ background: `url(${background})` }} className="header">
                 <TopBar />
                 Header
                 <Menu />
