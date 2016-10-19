@@ -240,5 +240,16 @@
         "price": 95,
         "currency": "SEK",
         "spicy": null
+    },
+    {
+        "id": 23,
+        "name": "Crispy Rolls",
+        "description": {
+            "en": "",
+            "sv": "Vietnamesiska vegetariska vårrullar och nuoc cham"
+        },
+        "price": 45,
+        "currency": "SEK",
+        "spicy": null
     }
 ]

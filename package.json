@@ -10,6 +10,7 @@
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-router": "^2.8.1",
+    "react-spinjs": "^3.0.0",
     "slug": "^0.9.1"
   },
   "scripts": {
