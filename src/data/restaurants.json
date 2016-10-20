@@ -19,7 +19,7 @@
             "Closed"
         ],
         "cashless": true,
-        "foodora": true,
+        "foodora": "https://www.foodora.se/restaurant/s6lx/sen-street-kitchen",
         "menu": [
             1,
             4,
@@ -62,7 +62,7 @@
             "Closed"
         ],
         "cashless": true,
-        "foodora": true,
+        "foodora": "https://www.foodora.se/restaurant/s5ql/sen-street-kitchen-kungsbron",
         "menu": [
             1,
             4,
@@ -105,7 +105,7 @@
             "10-18"
         ],
         "cashless": true,
-        "foodora": true,
+        "foodora": null,
         "menu": [
             1,
             4,

@@ -31,5 +31,5 @@ ReactDOM.render(
             <Route path="*" component={NoMatch}/>}
         </Route>
     </Router>,
-  document.getElementById('root')
+    document.getElementById('root')
 );

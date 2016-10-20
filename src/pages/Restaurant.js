@@ -4,6 +4,7 @@ import Map from './../components/Map.js';
 import OpeningHours from './../components/OpeningHours';
 import Dishes from './../components/Dishes';
 
+import foodora from './../assets/foodora.png';
 import restaurants from './../data/restaurants.json';
 import './Restaurant.css';
 
@@ -42,7 +43,20 @@ class Restaurant extends React.Component {
                         </div>
 
                         <h1 className="restaurant__name">
-                            { restaurant.name }
+                            { restaurant.foodora ? (
+                                <span className="has-foodora">
+                                    <span className="foodora-title">{ restaurant.name }</span>
+                                    <a href={ restaurant.foodora }>
+                                        <img
+                                            className="foodora"
+                                            src={ foodora }
+                                            alt="Foodora"
+                                        />
+                                    </a>
+                                </span>
+                            ) : (
+                                <span>{ restaurant.name }</span>
+                            ) }
                         </h1>
 
                         <OpeningHours openingHours={ restaurant.openingHours } />
