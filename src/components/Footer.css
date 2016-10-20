@@ -30,7 +30,7 @@
         padding-right: 2em;
     }
     .footer__col:first-child {
-        flex: 2;
+        flex: 0;
     }
     /*
     .footer__col:nth-child(2) {
