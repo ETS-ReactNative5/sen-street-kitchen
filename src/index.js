@@ -3,6 +3,7 @@ import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, browserHistory } from 'react-router';
+import ReactGA from 'react-ga';
 
 import Sen from './Sen';
 import About from './pages/About';
@@ -13,8 +14,15 @@ import NoMatch from './pages/NoMatch';
 import 'normalize-css';
 import './global.css';
 
+ReactGA.initialize('UA-86033359-1');
+
+const logPageView = () => {
+    ReactGA.set({ page: window.location.pathname });
+    ReactGA.pageview(window.location.pathname);
+};
+
 ReactDOM.render(
-    <Router history={browserHistory}>
+    <Router onUpdate={logPageView} history={browserHistory}>
         <Route path="/" component={Sen}>
             <Route path="about-us" component={About}/>
             <Route path="restaurants/:address" component={Restaurant} />
