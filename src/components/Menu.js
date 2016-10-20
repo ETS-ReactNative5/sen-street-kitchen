@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 
+import restaurants from './../data/restaurants.json';
 import './Menu.css';
 
 class Menu extends React.Component {
@@ -29,30 +30,16 @@ class Menu extends React.Component {
                             About Us
                         </Link>
                     </li>
-                    <li className="menu__list-item">
-                        <Link
-                            className="menu__link"
-                            activeClassName="menu__link--active"
-                            to="/restaurants/kungsbron-8">
-                            Kungsgatan 8
-                        </Link>
-                    </li>
-                    <li className="menu__list-item">
-                        <Link
-                            className="menu__link"
-                            activeClassName="menu__link--active"
-                            to="/restaurants/regeringsgatan-26">
-                            Regeringsgatan 26
-                        </Link>
-                    </li>
-                    <li className="menu__list-item">
-                        <Link
-                            className="menu__link"
-                            activeClassName="menu__link--active"
-                            to="/restaurants/avion-shopping">
-                            Avion Shopping
-                        </Link>
-                    </li>
+                    { restaurants.map(restaurant => (
+                        <li className="menu__list-item">
+                            <Link
+                                className="menu__link"
+                                activeClassName="menu__link--active"
+                                to={`/restaurants/${ restaurant.slug }`}>
+                                { restaurant.name }
+                            </Link>
+                        </li>
+                    )) }
                 </ul>
             </div>
         );
