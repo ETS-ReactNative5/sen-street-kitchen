@@ -1,5 +1,6 @@
 import React from 'react';
 
+import OpeningHours from './../components/OpeningHours';
 import Dishes from './../components/Dishes';
 
 import restaurants from './../data/restaurants.json';
@@ -43,15 +44,9 @@ class Restaurant extends React.Component {
                             { restaurant.name }
                         </h1>
 
-                        <div className="opening-hours">
-                            <span className="opening-hours__days">Mon-Fri</span> <span className="opening-hours__period">{ restaurant.openingHours[0] }</span>
-                            <span className="opening-hours__sep">|</span>
-                            <span className="opening-hours__days">Sat</span> <span className="opening-hours__period">{ restaurant.openingHours[5] }</span>
-                            <span className="opening-hours__sep">|</span>
-                            <span className="opening-hours__days">Sun</span> <span className="opening-hours__period">{ restaurant.openingHours[6] }</span>
-                        </div>
+                        <OpeningHours openingHours={ restaurant.openingHours } />
 
-                        <Dishes dishes={ restaurant.menu } />
+                        <Dishes city={ restaurant.address.city } dishes={ restaurant.menu } />
                     </div>
                 ) : null}
             </div>

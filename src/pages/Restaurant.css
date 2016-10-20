@@ -20,23 +20,3 @@
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-
-.opening-hours {
-    font-weight: 600;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 80px;
-}
-.opening-hours__days {
-    // margin: 0 1em;
-}
-
-.opening-hours__sep {
-    margin: 0 1em;
-    color: #ccc;
-}
-
-.opening-hours__period {
-    margin-left: 1em;
-    color: #e98457;
-}

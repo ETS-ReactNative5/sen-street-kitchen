@@ -1,0 +1,57 @@
+.opening-hours {
+    font-weight: 600;
+    margin-bottom: 80px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.opening-hours__days {
+    display: block;
+    float: left;
+    width: 50%;
+    padding-right: 0.5em;
+    text-align: right;
+}
+
+@media (min-width: 600px) {
+    .opening-hours__days {
+        display: inline;
+        float: none;
+        width: auto;
+        padding-right: 0;
+    }
+}
+
+
+.opening-hours__sep {
+    display: block;
+    height: 0;
+    color: #fff;
+}
+
+@media (min-width: 600px) {
+    .opening-hours__sep {
+        display: inline;
+        margin: 0 1em;
+        color: #ccc;
+    }
+}
+
+.opening-hours__period {
+    display: block;
+    float: right;
+    width: 50%;
+    padding-left: 0.5em;
+    text-align: left;
+    color: #e98457;
+}
+
+@media (min-width: 600px) {
+    .opening-hours__period {
+        display: inline;
+        float: none;
+        width: auto;
+        margin-left: 0.5em;
+        padding-left: 0;
+    }
+}

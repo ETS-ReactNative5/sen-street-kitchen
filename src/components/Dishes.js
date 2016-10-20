@@ -15,14 +15,15 @@ class Dishes extends React.Component {
     }
 
     render() {
-        const { dishes } = this.props;
+        const { dishes, city } = this.props;
 
         return (
             <div className="dishes">
                 { dishes.map(id => {
                     const dish = this.getDish(id);
+
                     return (
-                        <Dish key={ dish.id } dish={ dish } />
+                        <Dish key={ dish.id } city={ city } dish={ dish } />
                     );
                 }) }
             </div>
@@ -31,7 +32,8 @@ class Dishes extends React.Component {
 }
 
 Dishes.propTypes = {
-    dishes: React.PropTypes.array
+    dishes: React.PropTypes.array,
+    city  : React.PropTypes.string
 };
 
 export default Dishes;

@@ -1,8 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router';
+
 import TopBar from './TopBar';
 import Menu from './Menu';
 
 import background from './../assets/concrete.jpg';
+import logo from './../assets/logo.svg';
 
 import './Header.css';
 
@@ -14,10 +17,16 @@ class Header extends React.Component {
 
     render() {
         return (
-            <div style={{ background: `url(${background})` }} className="header">
+            <div>
                 <TopBar />
-                Header
+                <div style={{ background: `url(${background})` }} className="header">
+
+                    <Link to="/">
+                        <img className="logo" src={ logo } alt="SEN Street Kitchen" />
+                    </Link>
+
                 <Menu />
+                </div>
             </div>
         );
     }
