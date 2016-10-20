@@ -12,7 +12,7 @@ class Footer extends React.Component {
     }
 
     getNumberLink(number) {
-        return 'tel:0046' + number.slice(1).replace(/ /g,'').replace(/-/g,'');
+        return 'tel:0046' + number.slice(1).replace(/ /g, '').replace(/-/g, '');
     }
 
     render() {
