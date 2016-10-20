@@ -32,27 +32,15 @@ class Footer extends React.Component {
                                         About Us
                                     </Link>
                                 </li>
-                                <li className="footer-menu__list-item">
-                                    <Link
-                                        className="footer-menu__link"
-                                        to="/restaurants/kungsbron-8">
-                                        Kungsgatan 8
-                                    </Link>
-                                </li>
-                                <li className="footer-menu__list-item">
-                                    <Link
-                                        className="footer-menu__link"
-                                        to="/restaurants/regeringsgatan-26">
-                                        Regeringsgatan 26
-                                    </Link>
-                                </li>
-                                <li className="footer-menu__list-item">
-                                    <Link
-                                        className="footer-menu__link"
-                                        to="/restaurants/avion-shopping">
-                                        Avion Shopping
-                                    </Link>
-                                </li>
+                                { restaurants.map(restaurant => (
+                                    <li key={ restaurant.slug } className="footer-menu__list-item">
+                                        <Link
+                                            className="footer-menu__link"
+                                            to={`/restaurants/${ restaurant.slug }`}>
+                                            { restaurant.name }
+                                        </Link>
+                                    </li>
+                                )) }
                                 <li className="footer-menu__list-item">
                                     <Link
                                         className="footer-menu__link"

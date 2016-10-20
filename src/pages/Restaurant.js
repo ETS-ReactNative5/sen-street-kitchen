@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Map from './../components/Map.js';
 import OpeningHours from './../components/OpeningHours';
 import Dishes from './../components/Dishes';
 
@@ -47,6 +48,8 @@ class Restaurant extends React.Component {
                         <OpeningHours openingHours={ restaurant.openingHours } />
 
                         <Dishes city={ restaurant.address.city } dishes={ restaurant.menu } />
+
+                        <Map restaurant={ restaurant } />
                     </div>
                 ) : null}
             </div>

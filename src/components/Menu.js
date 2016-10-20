@@ -31,7 +31,7 @@ class Menu extends React.Component {
                         </Link>
                     </li>
                     { restaurants.map(restaurant => (
-                        <li className="menu__list-item">
+                        <li key={ restaurant.slug } className="menu__list-item">
                             <Link
                                 className="menu__link"
                                 activeClassName="menu__link--active"
@@ -40,6 +40,14 @@ class Menu extends React.Component {
                             </Link>
                         </li>
                     )) }
+                    <li className="menu__list-item">
+                        <Link
+                            className="menu__link"
+                            activeClassName="menu__link--active"
+                            to="/contact-us">
+                            Contact Us
+                        </Link>
+                    </li>
                 </ul>
             </div>
         );
