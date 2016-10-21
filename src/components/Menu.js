@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, IndexLink } from 'react-router';
 
 import restaurants from './../data/restaurants.json';
 import './Menu.css';
@@ -14,14 +14,14 @@ class Menu extends React.Component {
         return (
             <div className="menu">
                 <ul className="menu__list">
-                    {/*<li className="menu__list-item">
-                        <Link
+                    {<li className="menu__list-item">
+                        <IndexLink
                             className="menu__link"
                             activeClassName="menu__link--active"
                             to="/">
                             Home
-                        </Link>
-                    </li>*/}
+                        </IndexLink>
+                    </li>}
                     <li className="menu__list-item">
                         <Link
                             className="menu__link"

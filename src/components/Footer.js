@@ -28,6 +28,13 @@ class Footer extends React.Component {
                                 <li className="footer-menu__list-item">
                                     <Link
                                         className="footer-menu__link"
+                                        to="/">
+                                        Home
+                                    </Link>
+                                </li>
+                                <li className="footer-menu__list-item">
+                                    <Link
+                                        className="footer-menu__link"
                                         to="/about-us">
                                         About Us
                                     </Link>

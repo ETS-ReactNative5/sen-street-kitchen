@@ -9,11 +9,25 @@
     max-width: 100%;
     height: 18px;
     margin: 0 auto;
+    margin-bottom: .5em;
+}
+
+@media (min-width: 600px) {
+    .dish__title {
+        margin-bottom: 0;
+    }
 }
 
 .dish__image {
-    max-width: 100%;
-    margin: 0 auto;
+    display: none;
+}
+
+@media (min-width: 600px) {
+    .dish__image {
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
 }
 
 .dish__description {
