@@ -55,6 +55,13 @@ class Footer extends React.Component {
                                         Contact Us
                                     </Link>
                                 </li>
+                                <li className="footer-menu__list-item">
+                                    <Link
+                                        className="footer-menu__link"
+                                        to="/careers">
+                                        Work With SEN
+                                    </Link>
+                                </li>
                             </ul>
                         </div>
                     </div>

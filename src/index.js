@@ -10,6 +10,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Restaurant from './pages/Restaurant';
+import Careers from './pages/Careers';
 import NoMatch from './pages/NoMatch';
 
 import 'normalize-css';
@@ -29,7 +30,7 @@ ReactDOM.render(
             <Route path="about-us" component={About}/>
             <Route path="restaurants/:address" component={Restaurant} />
             <Route path="contact-us" component={Contact} />
-            <Route path="work-at-sen" component={Contact} />
+            <Route path="careers" component={Careers} />
             <Route path="*" component={NoMatch}/>}
         </Route>
     </Router>,
