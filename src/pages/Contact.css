@@ -1,0 +1,60 @@
+.contact {
+    max-width: 960px;
+    margin: 60px auto 0;
+    padding-right: 1em;
+    padding-left: 1em;
+    text-align: center;
+}
+
+.contact a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #333;
+}
+
+.contact__subtitle {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+@media (min-width: 600px) {
+    .contact__subtitle {
+        font-size: 16px;
+    }
+}
+
+.contact__title {
+    font-size: 28px;
+    font-weight: 900;
+    margin: 0.2em 0;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    overflow-wrap: break-word;
+}
+
+@media (min-width: 600px) {
+    .contact__title {
+        font-size: 43px;
+    }
+}
+
+.contact__restaurant {
+    margin-bottom: 1em;
+}
+
+@media (min-width: 600px) {
+    .contact__restaurants {
+        display: flex;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .contact__restaurant {
+        flex: 1;
+        text-align: left;
+    }
+}

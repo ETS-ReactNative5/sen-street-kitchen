@@ -24,7 +24,7 @@ class TopBar extends React.Component {
                         </span>
 
                         <span className="topbar__hours">
-                            { restaurant.openingHours[today - 1] }
+                            { restaurant.openingHours[today] }
                         </span>
                     </div>
                 )) }

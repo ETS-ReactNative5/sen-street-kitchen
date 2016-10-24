@@ -23,8 +23,8 @@ class Home extends React.Component {
 
                 <div className="home__restaurants">
                     { restaurants.map(restaurant => (
-                        <div className="home__restaurant">
-                            <Link key={ restaurant.slug } to={`/restaurants/${ restaurant.slug }`}>
+                        <div key={ restaurant.slug } className="home__restaurant">
+                            <Link to={`/restaurants/${ restaurant.slug }`}>
                                 <div>{ restaurant.address.city }</div>
                                 <h2>{ restaurant.name }</h2>
                             </Link>
