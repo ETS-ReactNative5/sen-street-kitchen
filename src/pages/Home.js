@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router';
+import Helmet from 'react-helmet';
 
+import ogimage from './../assets/ogimage.png';
 import restaurants from './../data/restaurants.json';
 import './Home.css';
 
@@ -37,6 +39,16 @@ class Home extends React.Component {
 
         return (
             <div className="home">
+                <Helmet
+                    title={ (locale === 'en' ? 'Home' : 'Hem') + ' | SEN Street Kitchen' }
+                    meta={[
+                        { property: 'og:title',       content: locale === 'en' ? 'Welcome to SEN Street Kitchen' : 'Välkommen till SEN Street Kitchen' },
+                        { property: 'og:type',        content: 'website' },
+                        { property: 'og:description', content: str.homeIngress },
+                        { property: 'og:image',       content: document.location.origin + ogimage }
+                    ]}
+                />
+
                 <h1 className="home__title">
                     { str.homeTitle }
                 </h1>
@@ -68,6 +80,8 @@ class Home extends React.Component {
     }
 }
 
-Home.propTypes = {};
+Home.propTypes = {
+    locale: React.PropTypes.string
+};
 
 export default Home;

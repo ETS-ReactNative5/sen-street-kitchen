@@ -1,9 +1,11 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 
 import Map from './../components/Map.js';
 import OpeningHours from './../components/OpeningHours';
 import Dishes from './../components/Dishes';
 
+import ogimage from './../assets/ogimage.png';
 import foodora from './../assets/foodora.svg';
 import restaurants from './../data/restaurants.json';
 import './Restaurant.css';
@@ -43,11 +45,26 @@ class Restaurant extends React.Component {
                     'Cashless Restaurant'
                 ) : (
                     'Kontantlös restaurang'
+                ),
+            ogDescription: locale === 'en' ? (
+                    `View the menu for SEN Street Kitchen, ${restaurant.name}, ${restaurant.address.city}.'`
+                ) : (
+                    `Se menyn för SEN Street Kitchen, ${restaurant.name}, ${restaurant.address.city}.'`
                 )
         };
 
         return (
             <div>
+                <Helmet
+                    title={ restaurant.name + ' | SEN Street Kitchen' }
+                    meta={[
+                        { property: 'og:title',       content: restaurant.name },
+                        { property: 'og:type',        content: 'article' },
+                        { property: 'og:description', content: str.ogDescription },
+                        { property: 'og:image',       content: document.location.origin + ogimage }
+                    ]}
+                />
+
                 {restaurant ? (
                     <div className="restaurant">
                         <div className="restaurant__city">
@@ -103,7 +120,8 @@ class Restaurant extends React.Component {
 }
 
 Restaurant.propTypes = {
-    params: React.PropTypes.object
+    params: React.PropTypes.object,
+    locale: React.PropTypes.string
 };
 
 export default Restaurant;
