@@ -1,7 +1,7 @@
 /* global process */
 
 import React from 'react';
-import slug from 'slug';
+import slug from './../helpers/slug';
 
 import './Dish.css';
 

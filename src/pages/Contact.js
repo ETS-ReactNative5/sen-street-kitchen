@@ -13,6 +13,8 @@ class Contact extends React.Component {
     }
 
     render() {
+        const { locale } = this.props;
+
         return (
             <div className="contact">
                 <div className="contact__subtitle">
@@ -67,6 +69,8 @@ class Contact extends React.Component {
     }
 }
 
-Contact.propTypes = {};
+Contact.propTypes = {
+    locale: React.PropTypes.string
+};
 
 export default Contact;

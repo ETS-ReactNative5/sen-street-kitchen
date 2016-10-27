@@ -39,15 +39,19 @@ class TopBar extends React.Component {
                 )) }
 
                 { locale === 'en' ? (
-                    <img onClick={ this.props.setLocaleToSwedish.bind(this) }className="flag" src={ se } alt="Svenska"/>
+                    <img onClick={ setLocaleToSwedish.bind(this) } className="flag" src={ se } alt="Svenska"/>
                 ) : (
-                    <img onClick={ this.props.setLocaleToEnglish.bind(this) } className="flag" src={ gb } alt="English"/>
+                    <img onClick={ setLocaleToEnglish.bind(this) } className="flag" src={ gb } alt="English"/>
                 ) }
             </div>
         );
     }
 }
 
-TopBar.propTypes = {};
+TopBar.propTypes = {
+    locale: React.PropTypes.string,
+    setLocaleToSwedish: React.PropTypes.func,
+    setLocaleToEnglish: React.PropTypes.func
+};
 
 export default TopBar;

@@ -9,7 +9,7 @@ class OpeningHours extends React.Component {
     }
 
     checkClosed(string) {
-        if (string === 'Closed' && this.props.locale != 'en') return 'Stängt';
+        if (string === 'Closed' && this.props.locale !== 'en') return 'Stängt';
         return string;
     }
 
@@ -46,7 +46,8 @@ class OpeningHours extends React.Component {
 }
 
 OpeningHours.propTypes = {
-    restaurant: React.PropTypes.object
+    restaurant: React.PropTypes.object,
+    locale: React.PropTypes.string
 };
 
 export default OpeningHours;
