@@ -3,6 +3,7 @@
         "slug": "regeringsgatan-26",
         "name": "Regeringsgatan 26",
         "phoneNumber": "08-23 48 88",
+        "email": "regeringsgatan26@senstreetkitchen.se",
         "address": {
             "street": "Regeringsgatan 26",
             "zipCode": "111 22",
@@ -46,6 +47,7 @@
         "slug": "kungsbron-8",
         "name": "Kungsbron 8",
         "phoneNumber": "08-10 86 88",
+        "email": "kungsbron8@senstreetkitchen.se",
         "address": {
             "street": "Kungsbron 8",
             "zipCode": "111 22",
@@ -89,6 +91,7 @@
         "slug": "avion-shopping",
         "name": "AVION Shopping",
         "phoneNumber": "090-818 88",
+        "email": "umea@senstreetkitchen.se",
         "address": {
             "street": "AVION Shopping, Marknadsgatan 3",
             "zipCode": "904 22",

@@ -31,7 +31,7 @@ class Dish extends React.Component {
     }
 
     render() {
-        const { dish } = this.props;
+        const { dish, locale } = this.props;
         const { logoUrl, imageUrl } = this.state;
 
         return (
@@ -45,7 +45,7 @@ class Dish extends React.Component {
                 />
 
                 <p className="dish__description">
-                    { dish.description.en }
+                    { locale === 'en' ? dish.description.en : dish.description.sv }
                 </p>
 
                 <div className="dish__price">

@@ -49,12 +49,11 @@
 @media (min-width: 600px) {
     .contact__restaurants {
         display: flex;
-        max-width: 600px;
-        margin: 0 auto;
+        max-width: 960px;
+        margin: 2em auto 0;
     }
 
     .contact__restaurant {
         flex: 1;
-        text-align: left;
     }
 }

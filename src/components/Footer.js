@@ -32,13 +32,13 @@ class Footer extends React.Component {
                                         Home
                                     </Link>
                                 </li>
-                                <li className="footer-menu__list-item">
+                                {/*<li className="footer-menu__list-item">
                                     <Link
                                         className="footer-menu__link"
                                         to="/about-us">
                                         About Us
                                     </Link>
-                                </li>
+                                </li>*/}
                                 { restaurants.map(restaurant => (
                                     <li key={ restaurant.slug } className="footer-menu__list-item">
                                         <Link
@@ -110,12 +110,15 @@ class Footer extends React.Component {
                                     </a>
                                 </li>
                             )) }
-                            <li className="footer-menu__list-item">
-                                <svg style={{ width: '18px', height: '18px' }} viewBox="0 0 24 24">
-                                    <path fill="#333333" d="M20,4H4A2,2 0 0,0 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6A2,2 0 0,0 20,4M20,18H4V8L12,13L20,8V18M20,6L12,11L4,6V6H20V6Z" />
-                                </svg>
-                                info@senstreetkitchen.se
-                            </li>
+
+                            { restaurants.map(restaurant => (
+                                <li key={ restaurant.slug } style={{ textTransform: 'lowercase' }} className="footer-menu__list-item">
+                                    <svg style={{ width: '18px', height: '18px' }} viewBox="0 0 24 24">
+                                        <path fill="#333333" d="M20,4H4A2,2 0 0,0 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6A2,2 0 0,0 20,4M20,18H4V8L12,13L20,8V18M20,6L12,11L4,6V6H20V6Z" />
+                                    </svg>
+                                    <a href={`mailto:${ restaurant.email }`}>{ restaurant.email }</a>
+                                </li>
+                            )) }
                         </ul>
                     </div>
                 </div>

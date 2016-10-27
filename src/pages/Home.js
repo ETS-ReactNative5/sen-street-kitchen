@@ -11,15 +11,47 @@ class Home extends React.Component {
     }
 
     render() {
+        const { locale } = this.props;
+        const str = {
+            homeTitle: locale === 'en' ? (
+                    'Street Markets in Bangkok or Ramen Stalls in Tokyo'
+                ) : (
+                    'Gatumarknad i Bangkok eller ramenstånd i Tokyo'
+                ),
+            homeIngress: locale === 'en' ? (
+                    'SEN Street Kitchen recreates the authentic flavors, smells and emotions at the bustling street markets in Hanoi and Bangkok, ramen stalls in Tokyo and all other food courts throughout East Asia.'
+                ) : (
+                    'SEN Street Kitchen återskapar de autentiska smakerna, dofterna och känslorna vid de livliga gatumarknaderna i Hanoi och Bangkok, ramenstånden i Tokyo samt alla andra gatukök över hela östra Asien.'
+                ),
+            homeIngress2: locale === 'en' ? (
+                    'Simple, fast, healthy and fresh.'
+                ) : (
+                    'Enkelt, snabbt, nyttigt och fräscht.'
+                ),
+            ourRestaurants: locale === 'en' ? (
+                    'Our Restaurants'
+                ) : (
+                    'Våra restauranger'
+                )
+        };
+
         return (
             <div className="home">
-                <div className="home__subtitle">
-                    Our Restaurants
-                </div>
-
                 <h1 className="home__title">
-                    Authentic Southeast <br />Asian Flavored Cuisine
+                    { str.homeTitle }
                 </h1>
+
+                <p className="home__ingress">
+                    { str.homeIngress }
+                </p>
+
+                <p className="home__ingress">
+                    { str.homeIngress2 }
+                </p>
+
+                <div className="home__subtitle">
+                    { str.ourRestaurants }
+                </div>
 
                 <div className="home__restaurants">
                     { restaurants.map(restaurant => (

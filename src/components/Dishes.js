@@ -15,7 +15,7 @@ class Dishes extends React.Component {
     }
 
     render() {
-        const { dishes, city } = this.props;
+        const { dishes, city, locale } = this.props;
 
         return (
             <div className="dishes">
@@ -23,7 +23,7 @@ class Dishes extends React.Component {
                     const dish = this.getDish(id);
 
                     return (
-                        <Dish key={ dish.id } city={ city } dish={ dish } />
+                        <Dish locale={ locale } key={ dish.id } city={ city } dish={ dish } />
                     );
                 }) }
             </div>

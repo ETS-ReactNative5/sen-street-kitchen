@@ -30,3 +30,12 @@
         justify-content: center;
     }
 }
+
+.flag {
+    width: auto;
+    height: 16px;
+    margin-top: 3px;
+}
+.flag:hover {
+    cursor: pointer;
+}

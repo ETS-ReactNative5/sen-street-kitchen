@@ -4,6 +4,9 @@ import restaurants from './../data/restaurants';
 
 import './TopBar.css';
 
+import gb from './../assets/gb.svg';
+import se from './../assets/se.svg';
+
 class TopBar extends React.Component {
     constructor(props) {
         super(props);
@@ -13,9 +16,15 @@ class TopBar extends React.Component {
     render() {
         const today = new Date().getDay();
 
+        const { locale, setLocaleToSwedish, setLocaleToEnglish } = this.props;
+
         return (
             <div className="topbar">
-                <div className="topbar__title">Opening Hours Today</div>
+                { locale === 'en' ? (
+                    <div className="topbar__title">Opening Hours Today</div>
+                ) : (
+                    <div className="topbar__title">Öppettider i dag</div>
+                ) }
 
                 { restaurants.map(restaurant => (
                     <div className="topbar__restaurant" key={ restaurant.slug }>
@@ -28,6 +37,12 @@ class TopBar extends React.Component {
                         </span>
                     </div>
                 )) }
+
+                { locale === 'en' ? (
+                    <img onClick={ this.props.setLocaleToSwedish.bind(this) }className="flag" src={ se } alt="Svenska"/>
+                ) : (
+                    <img onClick={ this.props.setLocaleToEnglish.bind(this) } className="flag" src={ gb } alt="English"/>
+                ) }
             </div>
         );
     }

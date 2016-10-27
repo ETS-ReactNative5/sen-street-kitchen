@@ -11,6 +11,8 @@ class Menu extends React.Component {
     }
 
     render() {
+        const { locale } = this.props;
+
         return (
             <div className="menu">
                 <ul className="menu__list">
@@ -19,17 +21,21 @@ class Menu extends React.Component {
                             className="menu__link"
                             activeClassName="menu__link--active"
                             to="/">
-                            Home
+                            { locale === 'en' ? (
+                                <span>Home</span>
+                            ) : (
+                                <span>Hem</span>
+                            ) }
                         </IndexLink>
                     </li>}
-                    <li className="menu__list-item">
+                    {/*<li className="menu__list-item">
                         <Link
                             className="menu__link"
                             activeClassName="menu__link--active"
                             to="/about-us">
                             About Us
                         </Link>
-                    </li>
+                    </li>*/}
                     { restaurants.map(restaurant => (
                         <li key={ restaurant.slug } className="menu__list-item">
                             <Link
@@ -45,7 +51,11 @@ class Menu extends React.Component {
                             className="menu__link"
                             activeClassName="menu__link--active"
                             to="/contact-us">
-                            Contact Us
+                            { locale === 'en' ? (
+                                <span>Contact Us</span>
+                            ) : (
+                                <span>Kontakta oss</span>
+                            ) }
                         </Link>
                     </li>
                 </ul>
