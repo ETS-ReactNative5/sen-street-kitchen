@@ -1598,6 +1598,10 @@ dom-converter@~0.1:
   dependencies:
     utila "~0.3"
 
+dom-helpers@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/dom-helpers/-/dom-helpers-2.4.0.tgz#9bb4b245f637367b1fa670274272aa28fe06c367"
+
 dom-serializer@0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/dom-serializer/-/dom-serializer-0.1.0.tgz#073c697546ce0780ce23be4a28e293e40bc30c82"
@@ -4290,6 +4294,14 @@ react-router:
     loose-envify "^1.2.0"
     warning "^3.0.0"
 
+react-router-scroll:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/react-router-scroll/-/react-router-scroll-0.3.2.tgz#ba8b1d01b3681dc5a68d72865d35c10e84065e52"
+  dependencies:
+    history "^2.1.2"
+    scroll-behavior "^0.8.0"
+    warning "^3.0.0"
+
 react-scripts@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/react-scripts/-/react-scripts-0.6.1.tgz#526cc472ae0c0de6bc4fdcbb198af2a62c6d4671"
@@ -4622,6 +4634,13 @@ sane@~1.4.1:
 sax@^1.1.4, sax@~1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.1.tgz#7b8e656190b228e81a66aea748480d828cd2d37a"
+
+scroll-behavior@^0.8.0:
+  version "0.8.2"
+  resolved "https://registry.yarnpkg.com/scroll-behavior/-/scroll-behavior-0.8.2.tgz#ace13e40b001d8d4d007aec0e7fb668cf9043546"
+  dependencies:
+    dom-helpers "^2.4.0"
+    invariant "^2.2.1"
 
 semver@^5.1.0, semver@~5.3.0, "semver@2 || 3 || 4 || 5":
   version "5.3.0"

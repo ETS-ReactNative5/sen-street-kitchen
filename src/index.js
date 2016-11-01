@@ -2,7 +2,8 @@ import 'babel-polyfill';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+import { applyRouterMiddleware, Router, Route, IndexRoute, browserHistory } from 'react-router';
+import useScroll from 'react-router-scroll/lib/useScroll';
 import ReactGA from 'react-ga';
 
 import Sen from './Sen';
@@ -24,7 +25,7 @@ const logPageView = () => {
 };
 
 ReactDOM.render(
-    <Router onUpdate={logPageView} history={browserHistory}>
+    <Router onUpdate={logPageView} history={browserHistory} render={applyRouterMiddleware(useScroll())}>
         <Route path="/" component={Sen}>
             <IndexRoute component={Home} />
             {/*<Route path="about-us" component={About}/>*/}

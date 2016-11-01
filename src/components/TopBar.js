@@ -1,5 +1,7 @@
 import React from 'react';
 
+import checkClosed from './../helpers/checkClosed';
+
 import restaurants from './../data/restaurants';
 
 import './TopBar.css';
@@ -33,7 +35,12 @@ class TopBar extends React.Component {
                         </span>
 
                         <span className="topbar__hours">
-                            { restaurant.openingHours[today] }
+                            { checkClosed({
+                                string: restaurant.openingHours[today],
+                                restaurant: restaurant.slug,
+                                locale: locale,
+                                deviation: true
+                            }) }
                         </span>
                     </div>
                 )) }

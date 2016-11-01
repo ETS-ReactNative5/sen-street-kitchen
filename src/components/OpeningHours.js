@@ -1,16 +1,13 @@
 import React from 'react';
 
+import checkClosed from './../helpers/checkClosed';
+
 import './OpeningHours.css';
 
 class OpeningHours extends React.Component {
     constructor(props) {
         super(props);
         this.displayName = 'OpeningHours';
-    }
-
-    checkClosed(string) {
-        if (string === 'Closed' && this.props.locale !== 'en') return 'Stängt';
-        return string;
     }
 
     render() {
@@ -35,19 +32,41 @@ class OpeningHours extends React.Component {
 
         return (
             <div className="opening-hours">
-                <span className="opening-hours__days">{ str.monFri }</span> <span className="opening-hours__period">{ openingHours[1] }</span>
+                <span className="opening-hours__days">{ str.monFri }</span>
+                <span className="opening-hours__period">
+                    { checkClosed({
+                        string: openingHours[1],
+                        restaurant: this.props.restaurant,
+                        locale: locale
+                    }) }
+                </span>
                 <span className="opening-hours__sep">|</span>
-                <span className="opening-hours__days">{ str.sat }</span> <span className="opening-hours__period">{ openingHours[6] }</span>
+                <span className="opening-hours__days">{ str.sat }</span>
+                <span className="opening-hours__period">
+                    { checkClosed({
+                        string: openingHours[6],
+                        restaurant: this.props.restaurant,
+                        locale: locale
+                    }) }
+                </span>
                 <span className="opening-hours__sep">|</span>
-                <span className="opening-hours__days">{ str.sun }</span> <span className="opening-hours__period">{ this.checkClosed(openingHours[0]) }</span>
+                <span className="opening-hours__days">{ str.sun }</span>
+                <span className="opening-hours__period">
+                    { checkClosed({
+                        string: openingHours[0],
+                        restaurant: this.props.restaurant,
+                        locale: locale
+                    }) }
+                </span>
             </div>
         );
     }
 }
 
 OpeningHours.propTypes = {
-    restaurant: React.PropTypes.object,
-    locale: React.PropTypes.string
+    restaurant: React.PropTypes.string,
+    locale: React.PropTypes.string,
+    openingHours: React.PropTypes.array
 };
 
 export default OpeningHours;

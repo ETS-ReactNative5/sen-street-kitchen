@@ -44,6 +44,7 @@
     text-transform: uppercase;
     color: #fff;
     border-bottom: 8px solid transparent;
+    text-shadow: 0 0 3px #000;
 }
 
 @media (min-width: 600px) {

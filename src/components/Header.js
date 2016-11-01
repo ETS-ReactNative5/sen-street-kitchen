@@ -4,13 +4,26 @@ import { Link } from 'react-router';
 import TopBar from './TopBar';
 import Menu from './Menu';
 
-import background from './../assets/concrete.jpg';
-import sen1 from './../assets/sen1.jpg';
-import sen2 from './../assets/sen2.jpg';
-import sen3 from './../assets/sen3.jpg';
+import bg02 from './../assets/bg/02.jpg';
+import bg03 from './../assets/bg/03.jpg';
+import bg04 from './../assets/bg/04.jpg';
+import bg06 from './../assets/bg/06.jpg';
+import bg09 from './../assets/bg/09.jpg';
+import bg10 from './../assets/bg/10.jpg';
+import bg11 from './../assets/bg/11.jpg';
 import logo from './../assets/logo.svg';
 
 import './Header.css';
+
+const bgs = [
+    bg02,
+    bg03,
+    bg04,
+    bg06,
+    bg09,
+    bg10,
+    bg11
+];
 
 class Header extends React.Component {
     constructor(props) {
@@ -19,28 +32,12 @@ class Header extends React.Component {
     }
 
     render() {
-        const { params } = this.props;
-
-        let bgr;
-        switch(params.address) {
-        case 'avion-shopping':
-            bgr = sen1;
-            break;
-        case 'kungsbron-8':
-            bgr = sen2;
-            break;
-        case 'regeringsgatan-26':
-            bgr = sen3;
-            break;
-        default:
-            bgr = background;
-            break;
-        }
+        const randomBg = bgs[Math.floor(Math.random() * bgs.length)];
 
         return (
             <div>
                 <TopBar {...this.props} />
-                <div style={{ backgroundImage: `url(${bgr})` }} className="header">
+                <div style={{ backgroundImage: `url(${randomBg})` }} className="header">
 
                     <Link to="/">
                         <img className="logo" src={ logo } alt="SEN Street Kitchen" />
