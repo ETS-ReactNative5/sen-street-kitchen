@@ -162,7 +162,7 @@
         },
         "price": {
             "stockholm": 89,
-            "umea": null
+            "umea": 95
         },
         "currency": "SEK",
         "spicy": null
@@ -218,7 +218,7 @@
         },
         "price": {
             "stockholm": 62,
-            "umea": null
+            "umea": 49
         },
         "currency": "SEK",
         "spicy": null
