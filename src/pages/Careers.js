@@ -28,9 +28,9 @@ class Careers extends React.Component {
                     'Ta nästa steg i din karriär'
                 ),
             paragraph: locale === 'en' ? (
-                    'We are currently in a very expansive phase and are constantly looking for good people to work with. We’d love to hear from you! Send an email to <a href="mailto:info@senstreetkitchen.com">info@senstreetkitchen.com</a> (include a short cover letter and your resume) and introduce yourself!'
+                    'We are currently in a very expansive phase and are constantly looking for good people to work with. We’d love to hear from you! Send an email to <a href="mailto:job@senstreetkitchen.com">job@senstreetkitchen.com</a> (include a short cover letter and your resume) and introduce yourself!'
                 ) : (
-                    'Vi växer just nu kraftigt och med det behöver vi alltid duktiga medarbetare. Vi vill gärna träffa dig! Skicka ett mail till <a href="mailto:info@senstreetkitchen.com">info@senstreetkitchen.com</a> (inkludera ett kort personligt brev och ditt CV) och säg hej!'
+                    'Vi växer just nu kraftigt och med det behöver vi alltid duktiga medarbetare. Vi vill gärna träffa dig! Skicka ett mail till <a href="mailto:job@senstreetkitchen.com">job@senstreetkitchen.com</a> (inkludera ett kort personligt brev och ditt CV) och säg hej!'
                 )
         };
 
