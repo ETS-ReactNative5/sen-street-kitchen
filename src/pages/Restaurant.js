@@ -65,6 +65,11 @@ class Restaurant extends React.Component {
                     'Download Menu'
                 ) : (
                     'Ladda ner meny'
+                ),
+            downloadAllergyGuide: locale === 'en' ? (
+                    'Allergy Guide'
+                ) : (
+                    'Allergiguide'
                 )
         };
 
@@ -126,6 +131,11 @@ class Restaurant extends React.Component {
                             <span>
                                 <PdfIcon />
                                 <a href={ `${process.env.PUBLIC_URL}/pdf/sen-${slug(restaurant.address.city)}-menu.pdf` }>{ str.downloadMenu }</a>
+                            </span>
+
+                            <span>
+                                <PdfIcon />
+                                <a href={ `${process.env.PUBLIC_URL}/pdf/sen-allergiguide.pdf` }>{ str.downloadAllergyGuide }</a>
                             </span>
 
                             { restaurant.foodora ? (
