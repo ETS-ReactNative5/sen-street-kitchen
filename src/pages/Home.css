@@ -65,7 +65,7 @@
 
 @media (min-width: 600px) {
     .home__restaurant {
-        width: 32%;
+        width: 24%;
     }
 }
 
@@ -76,7 +76,15 @@
 
 .home__restaurant h2 {
     font-weight: 600;
+    font-size: 20px;
     margin: 0;
+}
+
+.home__restaurant h2 + p {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #666;
+    margin-top: 0;
 }
 
 .home__restaurant a {

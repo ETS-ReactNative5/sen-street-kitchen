@@ -2,7 +2,7 @@ import 'babel-polyfill';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { applyRouterMiddleware, Router, Route, IndexRoute, browserHistory } from 'react-router';
+import { applyRouterMiddleware, Router, Route, IndexRoute, browserHistory, Redirect } from 'react-router';
 import useScroll from 'react-router-scroll/lib/useScroll';
 import ReactGA from 'react-ga';
 
@@ -32,6 +32,9 @@ ReactDOM.render(
             <Route path="restaurants/:address" component={Restaurant} />
             <Route path="contact-us" component={Contact} />
             <Route path="careers" component={Careers} />
+            <Redirect from="stockholm-regeringsgatan-26--sen-street-kitchen.html" to="restaurants/regeringsgatan-26" />
+            <Redirect from="stockholm-kungsbron-8--sen-street-kitchen.html" to="restaurants/kungsbron-8" />
+            <Redirect from="umea-avion-shopping--sen-street-kitchen.html" to="restaurants/avion-shopping" />
             <Route path="*" component={NoMatch}/>}
         </Route>
     </Router>,

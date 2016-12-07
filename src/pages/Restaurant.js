@@ -3,6 +3,7 @@ import Helmet from 'react-helmet';
 
 import slug from './../helpers/slug';
 
+// import Instagram from './../components/Instagram';
 import Map from './../components/Map.js';
 import OpeningHours from './../components/OpeningHours';
 import Dishes from './../components/Dishes';
@@ -115,7 +116,7 @@ class Restaurant extends React.Component {
                             restaurant={ restaurant.slug }
                         />
 
-                        <div className="restaurant__contact">
+                        <div className="restaurant__contact" style={{ marginBottom: '1em' }}>
                             <span>{ str.cashlessRestaurant }</span>
 
                             <span>
@@ -128,6 +129,16 @@ class Restaurant extends React.Component {
                                 <a href={ this.getNumberLink(restaurant.phoneNumber) }>{ restaurant.phoneNumber }</a>
                             </span>
 
+                            { restaurant.foodora ? (
+                                <span className="hide-desktop">
+                                    <a href={ restaurant.foodora }>
+                                        Foodora | { str.orderNow }
+                                    </a>
+                                </span>
+                            ) : null }
+                        </div>
+
+                        <div className="restaurant__contact">
                             <span>
                                 <PdfIcon />
                                 <a href={ `${process.env.PUBLIC_URL}/pdf/sen-${slug(restaurant.address.city)}-menu.pdf` }>{ str.downloadMenu }</a>
@@ -137,14 +148,6 @@ class Restaurant extends React.Component {
                                 <PdfIcon />
                                 <a href={ `${process.env.PUBLIC_URL}/pdf/sen-allergiguide.pdf` }>{ str.downloadAllergyGuide }</a>
                             </span>
-
-                            { restaurant.foodora ? (
-                                <span className="hide-desktop">
-                                    <a href={ restaurant.foodora }>
-                                        Foodora | { str.orderNow }
-                                    </a>
-                                </span>
-                            ) : null }
                         </div>
 
                         <Dishes locale={ locale } city={ restaurant.address.city } dishes={ restaurant.menu } />

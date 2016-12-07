@@ -34,6 +34,11 @@ class Home extends React.Component {
                     'Our Restaurants'
                 ) : (
                     'Våra restauranger'
+                ),
+            opensAutumn2017: locale === 'en' ? (
+                    'Opens autumn 2017'
+                ): (
+                    'Öppnar hösten 2017'
                 )
         };
 
@@ -74,6 +79,11 @@ class Home extends React.Component {
                             </Link>
                         </div>
                     )) }
+                    <div className="home__restaurant">
+                        <div>Jönköping</div>
+                        <h2>A6 Center</h2>
+                        <p>{ str.opensAutumn2017 }</p>
+                    </div>
                 </div>
             </div>
         );
