@@ -31,8 +31,16 @@ const checkClosed = ({string, restaurant, locale, deviation = false}) => {
             case '12-24':
             case '12-25':
             case '12-26':
+            case '12-27':
+            case '12-28':
+            case '12-29':
+            case '12-30':
             case '12-31':
             case '01-01':
+            case '01-02':
+            case '01-03':
+            case '01-04':
+            case '01-05':
             case '01-06':
                 string = 'Closed';
                 break;
