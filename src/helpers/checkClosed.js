@@ -15,8 +15,8 @@ const checkClosed = ({string, restaurant, locale, deviation = false}) => {
             case '12-25':
             case '12-26':
             case '12-31':
-            case '01-01':
-            case '01-06':
+            case '1-1':
+            case '1-6':
                 string = 'Closed';
                 break;
             case '12-05':
@@ -36,12 +36,12 @@ const checkClosed = ({string, restaurant, locale, deviation = false}) => {
             case '12-29':
             case '12-30':
             case '12-31':
-            case '01-01':
-            case '01-02':
-            case '01-03':
-            case '01-04':
-            case '01-05':
-            case '01-06':
+            case '1-1':
+            case '1-2':
+            case '1-3':
+            case '1-4':
+            case '1-5':
+            case '1-6':
                 string = 'Closed';
                 break;
             default:
@@ -50,10 +50,10 @@ const checkClosed = ({string, restaurant, locale, deviation = false}) => {
             break;
         case 'avion-shopping':
             switch (today) {
-            case '11-05':
+            case '11-5':
                 string = '10-18';
                 break;
-            case '12-03':
+            case '12-3':
             case '12-10':
                 string = '09-19';
                 break;
@@ -68,17 +68,17 @@ const checkClosed = ({string, restaurant, locale, deviation = false}) => {
                 break;
             case '12-24':
             case '12-31':
-            case '01-01':
+            case '1-1':
                 string = '10-15';
                 break;
             case '12-25':
                 string = 'Closed';
                 break;
             case '12-26':
-            case '01-06':
+            case '1-6':
                 string = '10-18';
                 break;
-            case '01-05':
+            case '1-5':
                 string = '10-20';
                 break;
             default:
