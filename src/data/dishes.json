@@ -7,8 +7,8 @@
             "sv": "Het Kaeng Phet-curry med kycklingfilé, citrongräs, galanga, kokosmjölk, broccoli, champinjoner och ris"
         },
         "price": {
-            "stockholm": 89,
-            "umea": 95
+            "stockholm": 95,
+            "umea": 99
         },
         "currency": "SEK",
         "spicy": 2
@@ -21,8 +21,8 @@
             "sv": "Yakinikumarinerat nötkött med krispig sallad, syrlig rättika, kimchi, sesamgroddar, sesamspenat och ris"
         },
         "price": {
-            "stockholm": 95,
-            "umea": 99
+            "stockholm": 99,
+            "umea": 105
         },
         "currency": "SEK",
         "spicy": 1
@@ -35,8 +35,8 @@
             "sv": "Malaysisk nudelsoppa med penang laksa, kycklingfilé, pak choi, groddar, färska örter och vetenudlar"
         },
         "price": {
-            "stockholm": 95,
-            "umea": 99
+            "stockholm": 99,
+            "umea": 105
         },
         "currency": "SEK",
         "spicy": 1
@@ -49,8 +49,8 @@
             "sv": "Grillad kycklingfilé i soja- och ingefärssås, sesammajonnäs, syrlig rättika och gulbeta samt ris"
         },
         "price": {
-            "stockholm": 89,
-            "umea": 95
+            "stockholm": 95,
+            "umea": 99
         },
         "currency": "SEK",
         "spicy": null
@@ -63,8 +63,8 @@
             "sv": "Vietnamesisk nudelsoppa med oxbuljong, lå̊gtempat nötkött, groddar, färska örter och risnudlar"
         },
         "price": {
-            "stockholm": 95,
-            "umea": 99
+            "stockholm": 99,
+            "umea": 105
         },
         "currency": "SEK",
         "spicy": 1
@@ -77,8 +77,8 @@
             "sv": "Sesammarinerat nötkött med krispiga blad, kimchi, sesamgroddar och ris"
         },
         "price": {
-            "stockholm": 95,
-            "umea": 99
+            "stockholm": 99,
+            "umea": 105
         },
         "currency": "SEK",
         "spicy": 1
@@ -91,7 +91,7 @@
             "sv": "BBQ-Pork med å̊ngad pak choi, syrlig morot och rättika samt ris"
         },
         "price": {
-            "umea": 95
+            "umea": 99
         },
         "currency": "SEK",
         "spicy": null
@@ -104,8 +104,8 @@
             "sv": "Grillad kycklingfilé med glasnudlar på̊ sötpotatis, blandsallad och rotfrukter"
         },
         "price": {
-            "stockholm": 89,
-            "umea": 95
+            "stockholm": 95,
+            "umea": 99
         },
         "currency": "SEK",
         "spicy": null
@@ -118,8 +118,8 @@
             "sv": "Grillad laxfilé i ingefära, machésallad, syrlig lök och ris"
         },
         "price": {
-            "stockholm": 105,
-            "umea": 109
+            "stockholm": 109,
+            "umea": 115
         },
         "currency": "SEK",
         "spicy": null
@@ -132,8 +132,8 @@
             "sv": "Tofu med RAW-nudlar i tamarindså̊s, blandsallad, färska örter och jordnötter"
         },
         "price": {
-            "stockholm": 89,
-            "umea": 95
+            "stockholm": 95,
+            "umea": 99
         },
         "currency": "SEK",
         "spicy": null
@@ -146,8 +146,8 @@
             "sv": "Ångade buns med bräserad fläsksida, syrlig lök och jordnötter"
         },
         "price": {
-            "stockholm": 79,
-            "umea": 79
+            "stockholm": 85,
+            "umea": 89
         },
         "currency": "SEK",
         "spicy": 1
@@ -160,8 +160,8 @@
             "sv": "Citrongräsmarinerat nötkött med blandsallad, färska örter, syrlig morot och rättika, risnudlar, rostad lök och jordnötter"
         },
         "price": {
-            "stockholm": 89,
-            "umea": 95
+            "stockholm": 95,
+            "umea": 99
         },
         "currency": "SEK",
         "spicy": null
@@ -174,8 +174,8 @@
             "sv": "Vetetortillas med sesammarinerat nötkött, krispig sallad, kimchi, syrlig lök, ris och ssamjang-så̊s"
         },
         "price": {
-            "stockholm": 79,
-            "umea": 79
+            "stockholm": 85,
+            "umea": 89
         },
         "currency": "SEK",
         "spicy": 1
@@ -188,8 +188,8 @@
             "sv": "Ångade dumplings med kycklingfyllning och ingefärsdressing"
         },
         "price": {
-            "stockholm": 45,
-            "umea": 45
+            "stockholm": 49,
+            "umea": 49
         },
         "currency": "SEK",
         "spicy": null
@@ -202,8 +202,8 @@
             "sv": "Sallads-”wrap” med sesammarinerat nötkött och ssamjang-sås"
         },
         "price": {
-            "stockholm": 45,
-            "umea": 45
+            "stockholm": 49,
+            "umea": 55
         },
         "currency": "SEK",
         "spicy": null
@@ -216,7 +216,7 @@
             "sv": "Ångade dumplings med räkfyllning, dressing på̊ sesam och vinäger"
         },
         "price": {
-            "stockholm": 62,
+            "stockholm": 65,
             "umea": 49
         },
         "currency": "SEK",
@@ -230,8 +230,8 @@
             "sv": "Färska Vietnamesiska vårrullar med handskalade räkor och nuoc cham"
         },
         "price": {
-            "stockholm": 45,
-            "umea": 45
+            "stockholm": 49,
+            "umea": 49
         },
         "currency": "SEK",
         "spicy": null
@@ -273,7 +273,7 @@
         },
         "price": {
             "stockholm": 45,
-            "umea": 45
+            "umea": 49
         },
         "currency": "SEK",
         "spicy": null
@@ -301,7 +301,7 @@
         },
         "price": {
             "stockholm": 95,
-            "umea": 95
+            "umea": 99
         },
         "currency": "SEK",
         "spicy": null
@@ -315,7 +315,7 @@
         },
         "price": {
             "stockholm": 45,
-            "umea": 45
+            "umea": 49
         },
         "currency": "SEK",
         "spicy": null
