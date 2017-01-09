@@ -33,7 +33,8 @@ class Dishes extends React.Component {
 
 Dishes.propTypes = {
     dishes: React.PropTypes.array,
-    city  : React.PropTypes.string
+    city  : React.PropTypes.string,
+    locale: React.PropTypes.string
 };
 
 export default Dishes;
