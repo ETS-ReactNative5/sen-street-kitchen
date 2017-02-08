@@ -64,6 +64,8 @@ class Menu extends React.Component {
     }
 }
 
-Menu.propTypes = {};
+Menu.propTypes = {
+    locale: React.PropTypes.string
+};
 
 export default Menu;

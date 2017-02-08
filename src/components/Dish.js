@@ -73,7 +73,8 @@ class Dish extends React.Component {
 
 Dish.propTypes = {
     dish: React.PropTypes.object,
-    city: React.PropTypes.string
+    city: React.PropTypes.string,
+    locale: React.PropTypes.string
 };
 
 export default Dish;

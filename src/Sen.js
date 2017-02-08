@@ -59,4 +59,8 @@ class Sen extends Component {
     }
 }
 
+Sen.propTypes = {
+    children: React.PropTypes.any
+};
+
 export default Sen;
