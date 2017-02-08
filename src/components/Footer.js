@@ -24,6 +24,10 @@ class Footer extends React.Component {
                                 .replace(/-/g, '');
     }
 
+    shouldComponentUpdate(nextProps) {
+        return this.props.locale != nextProps.locale ? true : false;
+    }
+
     render() {
         const { locale } = this.props;
 
