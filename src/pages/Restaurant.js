@@ -3,7 +3,6 @@ import Helmet from 'react-helmet';
 
 import slug from './../helpers/slug';
 
-// import Instagram from './../components/Instagram';
 import Map from './../components/Map.js';
 import OpeningHours from './../components/OpeningHours';
 import Dishes from './../components/Dishes';
