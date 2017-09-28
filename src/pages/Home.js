@@ -36,9 +36,9 @@ class Home extends React.Component {
                     'Våra restauranger'
                 ),
             opensAutumn2017: locale === 'en' ? (
-                    'Opens autumn 2017'
+                    'Opens October 26'
                 ): (
-                    'Öppnar hösten 2017'
+                    'Öppnar 26 oktober'
                 )
         };
 
