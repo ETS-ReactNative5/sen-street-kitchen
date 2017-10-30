@@ -18,10 +18,14 @@ class Footer extends React.Component {
     }
 
     getNumberLink(number) {
-        return 'tel:0046' + number
-                                .slice(1)
-                                .replace(/ /g, '')
-                                .replace(/-/g, '');
+        if (!number) return null;
+        return (
+            'tel:0046' +
+            number
+                .slice(1)
+                .replace(/ /g, '')
+                .replace(/-/g, '')
+        );
     }
 
     shouldComponentUpdate(nextProps) {
@@ -35,16 +39,18 @@ class Footer extends React.Component {
             <div className="footer-wrapper">
                 <div className="footer">
                     <div className="footer__col">
-                        <img className="footer__logo" src={ logo } alt="Sen Street Kitchen"/>
+                        <img
+                            className="footer__logo"
+                            src={logo}
+                            alt="Sen Street Kitchen"
+                        />
                     </div>
                     <div className="footer__col">
                         <div className="footer-menu">
                             <ul className="footer-menu__list">
                                 <li className="footer-menu__list-item">
-                                    <Link
-                                        className="footer-menu__link"
-                                        to="/">
-                                        { locale === 'en' ? 'Home' : 'Hem' }
+                                    <Link className="footer-menu__link" to="/">
+                                        {locale === 'en' ? 'Home' : 'Hem'}
                                     </Link>
                                 </li>
                                 {/*<li className="footer-menu__list-item">
@@ -54,27 +60,37 @@ class Footer extends React.Component {
                                         About Us
                                     </Link>
                                 </li>*/}
-                                { restaurants.map(restaurant => (
-                                    <li key={ restaurant.slug } className="footer-menu__list-item">
+                                {restaurants.map(restaurant => (
+                                    <li
+                                        key={restaurant.slug}
+                                        className="footer-menu__list-item"
+                                    >
                                         <Link
                                             className="footer-menu__link"
-                                            to={`/restaurants/${ restaurant.slug }`}>
-                                            { restaurant.name }
+                                            to={`/restaurants/${restaurant.slug}`}
+                                        >
+                                            {restaurant.name}
                                         </Link>
                                     </li>
-                                )) }
+                                ))}
                                 <li className="footer-menu__list-item">
                                     <Link
                                         className="footer-menu__link"
-                                        to="/contact-us">
-                                        { locale === 'en' ? 'Contact Us' : 'Kontakta oss' }
+                                        to="/contact-us"
+                                    >
+                                        {locale === 'en'
+                                            ? 'Contact Us'
+                                            : 'Kontakta oss'}
                                     </Link>
                                 </li>
                                 <li className="footer-menu__list-item">
                                     <Link
                                         className="footer-menu__link"
-                                        to="/careers">
-                                        { locale === 'en' ? 'Work With SEN' : 'Arbeta med SEN' }
+                                        to="/careers"
+                                    >
+                                        {locale === 'en'
+                                            ? 'Work With SEN'
+                                            : 'Arbeta med SEN'}
                                     </Link>
                                 </li>
                             </ul>
@@ -85,44 +101,81 @@ class Footer extends React.Component {
                             <ul className="footer-menu__list">
                                 <li className="footer-menu__list-item">
                                     <FacebookIcon />
-                                    <a href="https://www.facebook.com/SenStockholm">Stockholm</a>
+                                    <a href="https://www.facebook.com/SenStockholm">
+                                        Stockholm
+                                    </a>
                                 </li>
                                 <li className="footer-menu__list-item">
                                     <FacebookIcon />
-                                    <a href="https://www.facebook.com/pages/Sen-Street-Kitchen-Ume%C3%A5/1525861991050193">Umeå</a>
+                                    <a href="https://www.facebook.com/pages/Sen-Street-Kitchen-Ume%C3%A5/1525861991050193">
+                                        Umeå
+                                    </a>
+                                </li>
+                                <li className="footer-menu__list-item">
+                                    <FacebookIcon />
+                                    <a href="https://www.facebook.com/senstreetkitchena6/">
+                                        Jönköping
+                                    </a>
                                 </li>
                                 <li className="footer-menu__list-item">
                                     <InstagramIcon />
-                                    <a href="https://www.instagram.com/senstreetkitchen/">Stockholm</a>
+                                    <a href="https://www.instagram.com/senstreetkitchen/">
+                                        Stockholm
+                                    </a>
                                 </li>
                                 <li className="footer-menu__list-item">
                                     <InstagramIcon />
-                                    <a href="https://www.instagram.com/senstreetkitchenumea/">Umeå</a>
+                                    <a href="https://www.instagram.com/senstreetkitchenumea/">
+                                        Umeå
+                                    </a>
+                                </li>
+                                <li className="footer-menu__list-item">
+                                    <InstagramIcon />
+                                    <a href="https://www.instagram.com/senstreetkitchena6/">
+                                        Jönköping
+                                    </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div className="footer__col">
                         <ul className="footer-menu__list">
-                            { restaurants.map(restaurant => (
-                                <li key={ restaurant.slug } className="footer-menu__list-item">
-                                    <PhoneIcon />
-                                    { restaurant.name }:
-                                    <a
-                                        style={{ marginLeft: '.25em' }}
-                                        href={ this.getNumberLink(restaurant.phoneNumber) }
+                            {restaurants.map(restaurant => {
+                                if (!restaurant.phoneNumber) return null;
+                                return (
+                                    <li
+                                        key={restaurant.slug}
+                                        className="footer-menu__list-item"
                                     >
-                                        { restaurant.phoneNumber }
-                                    </a>
-                                </li>
-                            )) }
+                                        <PhoneIcon />
+                                        {restaurant.name}:
+                                        <a
+                                            style={{ marginLeft: '.25em' }}
+                                            href={this.getNumberLink(
+                                                restaurant.phoneNumber
+                                            )}
+                                        >
+                                            {restaurant.phoneNumber}
+                                        </a>
+                                    </li>
+                                );
+                            })}
 
-                            { restaurants.map(restaurant => (
-                                <li key={ restaurant.slug } style={{ textTransform: 'lowercase' }} className="footer-menu__list-item">
-                                    <MailIcon />
-                                    <a href={`mailto:${ restaurant.email }`}>{ restaurant.email }</a>
-                                </li>
-                            )) }
+                            {restaurants.map(restaurant => {
+                                if (!restaurant.email) return null;
+                                return (
+                                    <li
+                                        key={restaurant.slug}
+                                        style={{ textTransform: 'lowercase' }}
+                                        className="footer-menu__list-item"
+                                    >
+                                        <MailIcon />
+                                        <a href={`mailto:${restaurant.email}`}>
+                                            {restaurant.email}
+                                        </a>
+                                    </li>
+                                );
+                            })}
                         </ul>
                     </div>
                 </div>

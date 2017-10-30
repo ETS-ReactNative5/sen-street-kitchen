@@ -1,136 +1,149 @@
 [
-    {
-        "slug": "regeringsgatan-26",
-        "name": "Regeringsgatan 26",
-        "phoneNumber": "08-23 48 88",
-        "email": "regeringsgatan26@senstreetkitchen.se",
-        "address": {
-            "street": "Regeringsgatan 26",
-            "zipCode": "111 22",
-            "city": "Stockholm",
-            "country": "Sweden"
-        },
-        "openingHours": [
-            "Closed",
-            "10-19",
-            "10-19",
-            "10-19",
-            "10-19",
-            "10-19",
-            "Closed"
-        ],
-        "cashless": true,
-        "foodora": "https://www.foodora.se/restaurant/s6lx/sen-street-kitchen",
-        "menu": [
-            1,
-            4,
-            5,
-            3,
-            12,
-            8,
-            2,
-            6,
-            9,
-            13,
-            11,
-            10,
-            17,
-            15,
-            14,
-            16,
-            18,
-            19
-        ]
+  {
+    "slug": "regeringsgatan-26",
+    "name": "Regeringsgatan 26",
+    "phoneNumber": "08-23 48 88",
+    "email": "regeringsgatan26@senstreetkitchen.se",
+    "address": {
+      "street": "Regeringsgatan 26",
+      "zipCode": "111 22",
+      "city": "Stockholm",
+      "country": "Sweden"
     },
-    {
-        "slug": "kungsbron-8",
-        "name": "Kungsbron 8",
-        "phoneNumber": "08-10 86 88",
-        "email": "kungsbron8@senstreetkitchen.se",
-        "address": {
-            "street": "Kungsbron 8",
-            "zipCode": "111 22",
-            "city": "Stockholm",
-            "country": "Sweden"
-        },
-        "openingHours": [
-            "Closed",
-            "11-19",
-            "11-19",
-            "11-19",
-            "11-19",
-            "11-19",
-            "Closed"
-        ],
-        "cashless": true,
-        "foodora": "https://www.foodora.se/restaurant/s5ql/sen-street-kitchen-kungsbron",
-        "menu": [
-            1,
-            4,
-            5,
-            3,
-            12,
-            8,
-            2,
-            6,
-            9,
-            13,
-            11,
-            10,
-            17,
-            15,
-            14,
-            16,
-            18,
-            19
-        ]
+    "openingHours": [
+      "Closed",
+      "10-19",
+      "10-19",
+      "10-19",
+      "10-19",
+      "10-19",
+      "Closed"
+    ],
+    "cashless": true,
+    "foodora": "https://www.foodora.se/restaurant/s6lx/sen-street-kitchen",
+    "menu": [1, 4, 5, 3, 12, 8, 2, 6, 9, 13, 11, 10, 17, 15, 14, 16, 18, 19]
+  },
+  {
+    "slug": "kungsbron-8",
+    "name": "Kungsbron 8",
+    "phoneNumber": "08-10 86 88",
+    "email": "kungsbron8@senstreetkitchen.se",
+    "address": {
+      "street": "Kungsbron 8",
+      "zipCode": "111 22",
+      "city": "Stockholm",
+      "country": "Sweden"
     },
-    {
-        "slug": "avion-shopping",
-        "name": "AVION Shopping",
-        "phoneNumber": "090-818 88",
-        "email": "umea@senstreetkitchen.se",
-        "address": {
-            "street": "AVION Shopping, Marknadsgatan 3",
-            "zipCode": "904 22",
-            "city": "Umeå",
-            "country": "Sweden"
-        },
-        "openingHours": [
-            "10-18",
-            "10-20",
-            "10-20",
-            "10-20",
-            "10-20",
-            "10-20",
-            "10-18"
-        ],
-        "cashless": true,
-        "foodora": null,
-        "menu": [
-            1,
-            4,
-            5,
-            3,
-            12,
-            8,
-            2,
-            13,
-            6,
-            9,
-            11,
-            7,
-            22,
-            10,
-            17,
-            15,
-            14,
-            16,
-            19,
-            18,
-            23,
-            20,
-            21
-        ]
-    }
+    "openingHours": [
+      "Closed",
+      "11-19",
+      "11-19",
+      "11-19",
+      "11-19",
+      "11-19",
+      "Closed"
+    ],
+    "cashless": true,
+    "foodora":
+      "https://www.foodora.se/restaurant/s5ql/sen-street-kitchen-kungsbron",
+    "menu": [1, 4, 5, 3, 12, 8, 2, 6, 9, 13, 11, 10, 17, 15, 14, 16, 18, 19]
+  },
+  {
+    "slug": "avion-shopping",
+    "name": "AVION Shopping",
+    "phoneNumber": "090-818 88",
+    "email": "umea@senstreetkitchen.se",
+    "address": {
+      "street": "AVION Shopping, Marknadsgatan 3",
+      "zipCode": "904 22",
+      "city": "Umeå",
+      "country": "Sweden"
+    },
+    "openingHours": [
+      "10-18",
+      "10-20",
+      "10-20",
+      "10-20",
+      "10-20",
+      "10-20",
+      "10-18"
+    ],
+    "cashless": true,
+    "foodora": null,
+    "menu": [
+      1,
+      4,
+      5,
+      3,
+      12,
+      8,
+      2,
+      13,
+      6,
+      9,
+      11,
+      7,
+      22,
+      10,
+      17,
+      15,
+      14,
+      16,
+      19,
+      18,
+      23,
+      20,
+      21
+    ]
+  },
+  {
+    "slug": "asecs-jonkoping",
+    "name": "Asecs",
+    "phoneNumber": null,
+    "email": "asecs@senstreetkitchen.se",
+    "address": {
+      "street": "Kompanigatan 16",
+      "zipCode": "553 05",
+      "city": "Jönköping",
+      "country": "Sweden"
+    },
+    "openingHours": [
+      "10-17",
+      "10-20",
+      "10-20",
+      "10-20",
+      "10-20",
+      "10-20",
+      "10-18"
+    ],
+    "cashless": true,
+    "foodora": null,
+    "menu": [
+      1,
+      4,
+      5,
+      3,
+      12,
+      8,
+      2,
+      13,
+      6,
+      9,
+      11,
+      22,
+      10,
+      24,
+      25,
+      26,
+      17,
+      15,
+      14,
+      16,
+      19,
+      18,
+      23,
+      20,
+      21
+    ]
+  }
 ]

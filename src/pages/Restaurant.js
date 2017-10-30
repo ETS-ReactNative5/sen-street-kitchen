@@ -17,7 +17,6 @@ import foodora from './../assets/foodora.svg';
 import restaurants from './../data/restaurants.json';
 import './Restaurant.css';
 
-
 class Restaurant extends React.Component {
     constructor(props) {
         super(props);
@@ -28,7 +27,14 @@ class Restaurant extends React.Component {
     }
 
     getNumberLink(number) {
-        return 'tel:0046' + number.slice(1).replace(/ /g, '').replace(/-/g, '');
+        if (!number) return null;
+        return (
+            'tel:0046' +
+            number
+                .slice(1)
+                .replace(/ /g, '')
+                .replace(/-/g, '')
+        );
     }
 
     getRestaurant(slug) {
@@ -48,112 +54,140 @@ class Restaurant extends React.Component {
         const { locale } = this.props;
         const { restaurant } = this.state;
         const str = {
-            cashlessRestaurant: locale === 'en' ? (
-                    'Cashless Restaurant'
-                ) : (
-                    'Kontantlös restaurang'
-                ),
-            ogDescription: locale === 'en' ? (
-                    `View the menu for SEN Street Kitchen, ${restaurant.name}, ${restaurant.address.city}.'`
-                ) : (
-                    `Se menyn för SEN Street Kitchen, ${restaurant.name}, ${restaurant.address.city}.'`
-                ),
-            orderNow: locale === 'en' ? (
-                    'Order Online Now!'
-                ) : (
-                    'Beställ online nu!'
-                ),
-            downloadMenu: locale === 'en' ? (
-                    'Download Menu'
-                ) : (
-                    'Ladda ner meny'
-                ),
-            downloadAllergyGuide: locale === 'en' ? (
-                    'Allergy Guide'
-                ) : (
-                    'Allergiguide'
-                )
+            cashlessRestaurant:
+                locale === 'en'
+                    ? 'Cashless Restaurant'
+                    : 'Kontantlös restaurang',
+            ogDescription:
+                locale === 'en'
+                    ? `View the menu for SEN Street Kitchen, ${restaurant.name}, ${restaurant
+                          .address.city}.'`
+                    : `Se menyn för SEN Street Kitchen, ${restaurant.name}, ${restaurant
+                          .address.city}.'`,
+            orderNow:
+                locale === 'en' ? 'Order Online Now!' : 'Beställ online nu!',
+            downloadMenu: locale === 'en' ? 'Download Menu' : 'Ladda ner meny',
+            downloadAllergyGuide:
+                locale === 'en' ? 'Allergy Guide' : 'Allergiguide'
         };
 
         return (
             <div>
                 <Helmet
-                    title={ restaurant.name + ' | SEN Street Kitchen' }
+                    title={restaurant.name + ' | SEN Street Kitchen'}
                     meta={[
-                        { property: 'og:title',       content: restaurant.name },
-                        { property: 'og:type',        content: 'article' },
-                        { property: 'og:description', content: str.ogDescription },
-                        { property: 'og:image',       content: document.location.origin + ogimage }
+                        { property: 'og:title', content: restaurant.name },
+                        { property: 'og:type', content: 'article' },
+                        {
+                            property: 'og:description',
+                            content: str.ogDescription
+                        },
+                        {
+                            property: 'og:image',
+                            content: document.location.origin + ogimage
+                        }
                     ]}
                 />
 
                 {restaurant ? (
                     <div className="restaurant">
                         <div className="restaurant__city">
-                            { restaurant.address.city }
+                            {restaurant.address.city}
                         </div>
 
                         <h1 className="restaurant__name">
-                            { restaurant.foodora ? (
+                            {restaurant.foodora ? (
                                 <span className="has-foodora">
-                                    <span className="foodora-title">{ restaurant.name }</span>
-                                    <a href={ restaurant.foodora }>
+                                    <span className="foodora-title">
+                                        {restaurant.name}
+                                    </span>
+                                    <a href={restaurant.foodora}>
                                         <img
                                             className="foodora"
-                                            src={ foodora }
+                                            src={foodora}
                                             alt="Foodora"
                                         />
                                     </a>
                                 </span>
                             ) : (
-                                <span>{ restaurant.name }</span>
-                            ) }
-
+                                <span>{restaurant.name}</span>
+                            )}
                         </h1>
 
                         <OpeningHours
-                            locale={ locale }
-                            openingHours={ restaurant.openingHours }
-                            restaurant={ restaurant.slug }
+                            locale={locale}
+                            openingHours={restaurant.openingHours}
+                            restaurant={restaurant.slug}
                         />
 
-                        <div className="restaurant__contact" style={{ marginBottom: '1em' }}>
-                            <span>{ str.cashlessRestaurant }</span>
+                        <div
+                            className="restaurant__contact"
+                            style={{ marginBottom: '1em' }}
+                        >
+                            <span>{str.cashlessRestaurant}</span>
 
-                            <span>
-                                <MailIcon />
-                                <a href={`mailto:${ restaurant.email }`}>{ restaurant.email }</a>
-                            </span>
-
-                            <span>
-                                <PhoneIcon />
-                                <a href={ this.getNumberLink(restaurant.phoneNumber) }>{ restaurant.phoneNumber }</a>
-                            </span>
-
-                            { restaurant.foodora ? (
-                                <span className="hide-desktop">
-                                    <a href={ restaurant.foodora }>
-                                        Foodora | { str.orderNow }
+                            {restaurant.email && (
+                                <span>
+                                    <MailIcon />
+                                    <a href={`mailto:${restaurant.email}`}>
+                                        {restaurant.email}
                                     </a>
                                 </span>
-                            ) : null }
+                            )}
+
+                            {restaurant.phoneNumber && (
+                                <span>
+                                    <PhoneIcon />
+                                    <a
+                                        href={this.getNumberLink(
+                                            restaurant.phoneNumber
+                                        )}
+                                    >
+                                        {restaurant.phoneNumber}
+                                    </a>
+                                </span>
+                            )}
+
+                            {restaurant.foodora && (
+                                <span className="hide-desktop">
+                                    <a href={restaurant.foodora}>
+                                        Foodora | {str.orderNow}
+                                    </a>
+                                </span>
+                            )}
                         </div>
 
                         <div className="restaurant__contact">
                             <span>
                                 <PdfIcon />
-                                <a href={ `${process.env.PUBLIC_URL}/pdf/sen-${slug(restaurant.address.city)}-menu.pdf` }>{ str.downloadMenu }</a>
+                                <a
+                                    href={`${process.env
+                                        .PUBLIC_URL}/pdf/sen-${slug(
+                                        restaurant.address.city
+                                    )}-menu.pdf`}
+                                >
+                                    {str.downloadMenu}
+                                </a>
                             </span>
 
                             <span>
                                 <PdfIcon />
-                                <a href={ `${process.env.PUBLIC_URL}/pdf/sen-allergiguide.pdf` }>{ str.downloadAllergyGuide }</a>
+                                <a
+                                    href={`${process.env
+                                        .PUBLIC_URL}/pdf/sen-allergiguide.pdf`}
+                                >
+                                    {str.downloadAllergyGuide}
+                                </a>
                             </span>
                         </div>
 
-                        <Dishes locale={ locale } city={ restaurant.address.city } dishes={ restaurant.menu } />
+                        <Dishes
+                            locale={locale}
+                            city={restaurant.address.city}
+                            dishes={restaurant.menu}
+                        />
 
-                        <Map restaurant={ restaurant } />
+                        <Map restaurant={restaurant} />
                     </div>
                 ) : null}
             </div>

@@ -1,323 +1,414 @@
 [
-    {
-        "id": 1,
-        "name": "Bangkok Time",
-        "description": {
-            "en": "Spicy Kaeng Phet curry with chicken, lemongrass, galangal, coconut milk, broccoli, mushrooms and rice",
-            "sv": "Het Kaeng Phet-curry med kycklingfilé, citrongräs, galanga, kokosmjölk, broccoli, champinjoner och ris"
-        },
-        "price": {
-            "stockholm": 95,
-            "umea": 99
-        },
-        "currency": "SEK",
-        "spicy": 2
+  {
+    "id": 1,
+    "name": "Bangkok Time",
+    "description": {
+      "en":
+        "Spicy Kaeng Phet curry with chicken, lemongrass, galangal, coconut milk, broccoli, mushrooms and rice",
+      "sv":
+        "Het Kaeng Phet-curry med kycklingfilé, citrongräs, galanga, kokosmjölk, broccoli, champinjoner och ris"
     },
-    {
-        "id": 2,
-        "name": "Bibimbap",
-        "description": {
-            "en": "Yakiniku marinated beef with crisp lettuce, sour radish, kimchi, sesame seeds, sesame spinach and rice",
-            "sv": "Yakinikumarinerat nötkött med krispig sallad, syrlig rättika, kimchi, sesamgroddar, sesamspenat och ris"
-        },
-        "price": {
-            "stockholm": 99,
-            "umea": 105
-        },
-        "currency": "SEK",
-        "spicy": 1
+    "price": {
+      "stockholm": 95,
+      "umea": 99,
+      "jonkoping": 99
     },
-    {
-        "id": 3,
-        "name": "Ayam Laksa",
-        "description": {
-            "en": "Malaysian noodle soup with Penang laksa, chicken, pak choi, sprouts, fresh herbs and wheat noodles",
-            "sv": "Malaysisk nudelsoppa med penang laksa, kycklingfilé, pak choi, groddar, färska örter och vetenudlar"
-        },
-        "price": {
-            "stockholm": 99,
-            "umea": 105
-        },
-        "currency": "SEK",
-        "spicy": 1
+    "currency": "SEK",
+    "spicy": 2
+  },
+  {
+    "id": 2,
+    "name": "Bibimbap",
+    "description": {
+      "en":
+        "Yakiniku marinated beef with crisp lettuce, sour radish, kimchi, sesame seeds, sesame spinach and rice",
+      "sv":
+        "Yakinikumarinerat nötkött med krispig sallad, syrlig rättika, kimchi, sesamgroddar, sesamspenat och ris"
     },
-    {
-        "id": 4,
-        "name": "Goma Chicken",
-        "description": {
-            "en": "Grilled chicken in soy and ginger sauce, sesame mayonnaise, sour radish and yellow beets with rice",
-            "sv": "Grillad kycklingfilé i soja- och ingefärssås, sesammajonnäs, syrlig rättika och gulbeta samt ris"
-        },
-        "price": {
-            "stockholm": 95,
-            "umea": 99
-        },
-        "currency": "SEK",
-        "spicy": null
+    "price": {
+      "stockholm": 99,
+      "umea": 105,
+      "jonkoping": 105
     },
-    {
-        "id": 5,
-        "name": "Phở",
-        "description": {
-            "en": "Vietnamese noodle soup with broth, beef cooked at low-temperature, sprouts, fresh herbs and rice noodles",
-            "sv": "Vietnamesisk nudelsoppa med oxbuljong, lå̊gtempat nötkött, groddar, färska örter och risnudlar"
-        },
-        "price": {
-            "stockholm": 99,
-            "umea": 105
-        },
-        "currency": "SEK",
-        "spicy": 1
+    "currency": "SEK",
+    "spicy": 1
+  },
+  {
+    "id": 3,
+    "name": "Ayam Laksa",
+    "description": {
+      "en":
+        "Malaysian noodle soup with Penang laksa, chicken, pak choi, sprouts, fresh herbs and wheat noodles",
+      "sv":
+        "Malaysisk nudelsoppa med penang laksa, kycklingfilé, pak choi, groddar, färska örter och vetenudlar"
     },
-    {
-        "id": 6,
-        "name": "Bulgogi",
-        "description": {
-            "en": "Sesame-marinated beef with crispy leaves, kimchi, sesame sproutes and rice",
-            "sv": "Sesammarinerat nötkött med krispiga blad, kimchi, sesamgroddar och ris"
-        },
-        "price": {
-            "stockholm": 99,
-            "umea": 105
-        },
-        "currency": "SEK",
-        "spicy": 1
+    "price": {
+      "stockholm": 99,
+      "umea": 105,
+      "jonkoping": 105
     },
-    {
-        "id": 7,
-        "name": "Char Siu",
-        "description": {
-            "en": "BBQ Pork with steamed pak choi, sour carrot and radish with rice",
-            "sv": "BBQ-Pork med å̊ngad pak choi, syrlig morot och rättika samt ris"
-        },
-        "price": {
-            "umea": 99
-        },
-        "currency": "SEK",
-        "spicy": null
+    "currency": "SEK",
+    "spicy": 1
+  },
+  {
+    "id": 4,
+    "name": "Goma Chicken",
+    "description": {
+      "en":
+        "Grilled chicken in soy and ginger sauce, sesame mayonnaise, sour radish and yellow beets with rice",
+      "sv":
+        "Grillad kycklingfilé i soja- och ingefärssås, sesammajonnäs, syrlig rättika och gulbeta samt ris"
     },
-    {
-        "id": 8,
-        "name": "Gamgi",
-        "description": {
-            "en": "Grilled chicken with sweet potato noodles, mixed salad and root vegetables",
-            "sv": "Grillad kycklingfilé med glasnudlar på̊ sötpotatis, blandsallad och rotfrukter"
-        },
-        "price": {
-            "stockholm": 95,
-            "umea": 99
-        },
-        "currency": "SEK",
-        "spicy": null
+    "price": {
+      "stockholm": 95,
+      "umea": 99,
+      "jonkoping": 99
     },
-    {
-        "id": 9,
-        "name": "Sora Sämon",
-        "description": {
-            "en": "Grilled salmon in ginger, mache salad, sour onions and rice",
-            "sv": "Grillad laxfilé i ingefära, machésallad, syrlig lök och ris"
-        },
-        "price": {
-            "stockholm": 109,
-            "umea": 115
-        },
-        "currency": "SEK",
-        "spicy": null
+    "currency": "SEK",
+    "spicy": null
+  },
+  {
+    "id": 5,
+    "name": "Phở",
+    "description": {
+      "en":
+        "Vietnamese noodle soup with broth, beef cooked at low-temperature, sprouts, fresh herbs and rice noodles",
+      "sv":
+        "Vietnamesisk nudelsoppa med oxbuljong, lå̊gtempat nötkött, groddar, färska örter och risnudlar"
     },
-    {
-        "id": 10,
-        "name": "Happy Noodles",
-        "description": {
-            "en": "Tofu with raw noodles in tamarind sauce, mixed salad, fresh herbs and peanuts",
-            "sv": "Tofu med RAW-nudlar i tamarindså̊s, blandsallad, färska örter och jordnötter"
-        },
-        "price": {
-            "stockholm": 95,
-            "umea": 99
-        },
-        "currency": "SEK",
-        "spicy": null
+    "price": {
+      "stockholm": 99,
+      "jonkoping": 105,
+      "umea": 105
     },
-    {
-        "id": 11,
-        "name": "Gua Bao",
-        "description": {
-            "en": "Steamed buns with braised pork, sour onions and peanuts",
-            "sv": "Ångade buns med bräserad fläsksida, syrlig lök och jordnötter"
-        },
-        "price": {
-            "stockholm": 85,
-            "umea": 89
-        },
-        "currency": "SEK",
-        "spicy": 1
+    "currency": "SEK",
+    "spicy": 1
+  },
+  {
+    "id": 6,
+    "name": "Bulgogi",
+    "description": {
+      "en":
+        "Sesame-marinated beef with crispy leaves, kimchi, sesame sproutes and rice",
+      "sv":
+        "Sesammarinerat nötkött med krispiga blad, kimchi, sesamgroddar och ris"
     },
-    {
-        "id": 12,
-        "name": "9 Rivers Salad",
-        "description": {
-            "en": "Lemongrass-marinated beef with mixed salad, fresh herbs, sour carrot and radish, rice noodles, roasted onions and peanuts",
-            "sv": "Citrongräsmarinerat nötkött med blandsallad, färska örter, syrlig morot och rättika, risnudlar, rostad lök och jordnötter"
-        },
-        "price": {
-            "stockholm": 95,
-            "umea": 99
-        },
-        "currency": "SEK",
-        "spicy": null
+    "price": {
+      "stockholm": 99,
+      "umea": 105,
+      "jonkoping": 105
     },
-    {
-        "id": 13,
-        "name": "Soegogi Wrap",
-        "description": {
-            "en": "Wheat tortillas with sesame-marinated beef, crispy salad, kimchi, sour onions, ssamjang sauce and rice",
-            "sv": "Vetetortillas med sesammarinerat nötkött, krispig sallad, kimchi, syrlig lök, ris och ssamjang-så̊s"
-        },
-        "price": {
-            "stockholm": 85,
-            "umea": 89
-        },
-        "currency": "SEK",
-        "spicy": 1
+    "currency": "SEK",
+    "spicy": 1
+  },
+  {
+    "id": 7,
+    "name": "Char Siu",
+    "description": {
+      "en": "BBQ Pork with steamed pak choi, sour carrot and radish with rice",
+      "sv": "BBQ-Pork med å̊ngad pak choi, syrlig morot och rättika samt ris"
     },
-    {
-        "id": 14,
-        "name": "Gyoza",
-        "description": {
-            "en": "Steamed chicken dumplings and ginger dressing",
-            "sv": "Ångade dumplings med kycklingfyllning och ingefärsdressing"
-        },
-        "price": {
-            "stockholm": 49,
-            "umea": 49
-        },
-        "currency": "SEK",
-        "spicy": null
+    "price": {
+      "umea": 99
     },
-    {
-        "id": 15,
-        "name": "Ssäm",
-        "description": {
-            "en": "Lettuce “wrap” with soy marinated beef and ssamjang sauce",
-            "sv": "Sallads-”wrap” med sesammarinerat nötkött och ssamjang-sås"
-        },
-        "price": {
-            "stockholm": 49,
-            "umea": 55
-        },
-        "currency": "SEK",
-        "spicy": null
+    "currency": "SEK",
+    "spicy": null
+  },
+  {
+    "id": 8,
+    "name": "Gamgi",
+    "description": {
+      "en":
+        "Grilled chicken with sweet potato noodles, mixed salad and root vegetables",
+      "sv":
+        "Grillad kycklingfilé med glasnudlar på̊ sötpotatis, blandsallad och rotfrukter"
     },
-    {
-        "id": 16,
-        "name": "Hacao",
-        "description": {
-            "en": "Steamed shrimp dumplings with sesame and vinegar dressing",
-            "sv": "Ångade dumplings med räkfyllning, dressing på̊ sesam och vinäger"
-        },
-        "price": {
-            "stockholm": 65,
-            "umea": 49
-        },
-        "currency": "SEK",
-        "spicy": null
+    "price": {
+      "stockholm": 95,
+      "umea": 99,
+      "jonkoping": 99
     },
-    {
-        "id": 17,
-        "name": "Summer Rolls",
-        "description": {
-            "en": "Fresh Vietnamese spring rolls with shrimp and nuoc cham",
-            "sv": "Färska Vietnamesiska vårrullar med handskalade räkor och nuoc cham"
-        },
-        "price": {
-            "stockholm": 49,
-            "umea": 49
-        },
-        "currency": "SEK",
-        "spicy": null
+    "currency": "SEK",
+    "spicy": null
+  },
+  {
+    "id": 9,
+    "name": "Sora Sämon",
+    "description": {
+      "en": "Grilled salmon in ginger, mache salad, sour onions and rice",
+      "sv": "Grillad laxfilé i ingefära, machésallad, syrlig lök och ris"
     },
-    {
-        "id": 18,
-        "name": "Edamame",
-        "description": {
-            "en": "Steamed soy beans with chilli and salt flakes",
-            "sv": "Ångade sojabönor med chili och flingsalt"
-        },
-        "price": {
-            "stockholm": 39,
-            "umea": 39
-        },
-        "currency": "SEK",
-        "spicy": null
+    "price": {
+      "stockholm": 109,
+      "umea": 115,
+      "jonkoping": 115
     },
-    {
-        "id": 19,
-        "name": "Broccoli",
-        "description": {
-            "en": "Steamed broccoli with garlic and salt flakes",
-            "sv": "Ångad broccoli med vitlök och flingsalt"
-        },
-        "price": {
-            "stockholm": 39,
-            "umea": 39
-        },
-        "currency": "SEK",
-        "spicy": null
+    "currency": "SEK",
+    "spicy": null
+  },
+  {
+    "id": 10,
+    "name": "Happy Noodles",
+    "description": {
+      "en":
+        "Tofu with raw noodles in tamarind sauce, mixed salad, fresh herbs and peanuts",
+      "sv":
+        "Tofu med RAW-nudlar i tamarindså̊s, blandsallad, färska örter och jordnötter"
     },
-    {
-        "id": 20,
-        "name": "Crispy Tofu",
-        "description": {
-            "en": "Deep fried organic tofu and ginger dressing",
-            "sv": "Friterad ekologisk tofu och ingefärsdressing"
-        },
-        "price": {
-            "stockholm": 45,
-            "umea": 49
-        },
-        "currency": "SEK",
-        "spicy": null
+    "price": {
+      "stockholm": 95,
+      "umea": 99,
+      "jonkoping": 99
     },
-    {
-        "id": 21,
-        "name": "Babi",
-        "description": {
-            "en": "Lettuce “wrap” with baked pork and hoisin sauce",
-            "sv": "Sallads-”wrap” med bakad fläsksida och hoisin-sås"
-        },
-        "price": {
-            "stockholm": 49,
-            "umea": 49
-        },
-        "currency": "SEK",
-        "spicy": null
+    "currency": "SEK",
+    "spicy": null
+  },
+  {
+    "id": 11,
+    "name": "Gua Bao",
+    "description": {
+      "en": "Steamed buns with braised pork, sour onions and peanuts",
+      "sv": "Ångade buns med bräserad fläsksida, syrlig lök och jordnötter"
     },
-    {
-        "id": 22,
-        "name": "Jungle Rolls Salad",
-        "description": {
-            "en": "Crispy spring rolls, mixed salad, fresh herbs, rice noodles, roasted onions, sour carrot and sesame oil / vinegar dressing",
-            "sv": "Krispiga vårrullar, blandsallad, färska örter, risnudlar, rostad lök, syrlig morot och sesam-/vinägerdressing"
-        },
-        "price": {
-            "stockholm": 95,
-            "umea": 99
-        },
-        "currency": "SEK",
-        "spicy": null
+    "price": {
+      "stockholm": 85,
+      "umea": 89,
+      "jonkoping": 89
     },
-    {
-        "id": 23,
-        "name": "Crispy Rolls",
-        "description": {
-            "en": "Vietnamese vegetarian spring rolls and nuoc cham",
-            "sv": "Vietnamesiska vegetariska vårrullar och nuoc cham"
-        },
-        "price": {
-            "stockholm": 45,
-            "umea": 49
-        },
-        "currency": "SEK",
-        "spicy": null
-    }
+    "currency": "SEK",
+    "spicy": 1
+  },
+  {
+    "id": 12,
+    "name": "9 Rivers Salad",
+    "description": {
+      "en":
+        "Lemongrass-marinated beef with mixed salad, fresh herbs, sour carrot and radish, rice noodles, roasted onions and peanuts",
+      "sv":
+        "Citrongräsmarinerat nötkött med blandsallad, färska örter, syrlig morot och rättika, risnudlar, rostad lök och jordnötter"
+    },
+    "price": {
+      "stockholm": 95,
+      "umea": 99,
+      "jonkoping": 99
+    },
+    "currency": "SEK",
+    "spicy": null
+  },
+  {
+    "id": 13,
+    "name": "Soegogi Wrap",
+    "description": {
+      "en":
+        "Wheat tortillas with sesame-marinated beef, crispy salad, kimchi, sour onions, ssamjang sauce and rice",
+      "sv":
+        "Vetetortillas med sesammarinerat nötkött, krispig sallad, kimchi, syrlig lök, ris och ssamjang-så̊s"
+    },
+    "price": {
+      "stockholm": 85,
+      "umea": 89,
+      "jonkoping": 89
+    },
+    "currency": "SEK",
+    "spicy": 1
+  },
+  {
+    "id": 14,
+    "name": "Gyoza",
+    "description": {
+      "en": "Steamed chicken dumplings and ginger dressing",
+      "sv": "Ångade dumplings med kycklingfyllning och ingefärsdressing"
+    },
+    "price": {
+      "stockholm": 49,
+      "umea": 49,
+      "jonkoping": 49
+    },
+    "currency": "SEK",
+    "spicy": null
+  },
+  {
+    "id": 15,
+    "name": "Ssäm",
+    "description": {
+      "en": "Lettuce “wrap” with soy marinated beef and ssamjang sauce",
+      "sv": "Sallads-”wrap” med sesammarinerat nötkött och ssamjang-sås"
+    },
+    "price": {
+      "stockholm": 49,
+      "umea": 55,
+      "jonkoping": 55
+    },
+    "currency": "SEK",
+    "spicy": null
+  },
+  {
+    "id": 16,
+    "name": "Hacao",
+    "description": {
+      "en": "Steamed shrimp dumplings with sesame and vinegar dressing",
+      "sv":
+        "Ångade dumplings med räkfyllning, dressing på̊ sesam och vinäger"
+    },
+    "price": {
+      "stockholm": 65,
+      "umea": 49,
+      "jonkoping": 49
+    },
+    "currency": "SEK",
+    "spicy": null
+  },
+  {
+    "id": 17,
+    "name": "Summer Rolls",
+    "description": {
+      "en": "Fresh Vietnamese spring rolls with shrimp and nuoc cham",
+      "sv":
+        "Färska Vietnamesiska vårrullar med handskalade räkor och nuoc cham"
+    },
+    "price": {
+      "stockholm": 49,
+      "umea": 49,
+      "jonkoping": 49
+    },
+    "currency": "SEK",
+    "spicy": null
+  },
+  {
+    "id": 18,
+    "name": "Edamame",
+    "description": {
+      "en": "Steamed soy beans with chilli and salt flakes",
+      "sv": "Ångade sojabönor med chili och flingsalt"
+    },
+    "price": {
+      "stockholm": 39,
+      "umea": 39,
+      "jonkoping": 39
+    },
+    "currency": "SEK",
+    "spicy": null
+  },
+  {
+    "id": 19,
+    "name": "Broccoli",
+    "description": {
+      "en": "Steamed broccoli with garlic and salt flakes",
+      "sv": "Ångad broccoli med vitlök och flingsalt"
+    },
+    "price": {
+      "stockholm": 39,
+      "umea": 39,
+      "jonkoping": 39
+    },
+    "currency": "SEK",
+    "spicy": null
+  },
+  {
+    "id": 20,
+    "name": "Crispy Tofu",
+    "description": {
+      "en": "Deep fried organic tofu and ginger dressing",
+      "sv": "Friterad ekologisk tofu och ingefärsdressing"
+    },
+    "price": {
+      "stockholm": 45,
+      "umea": 49,
+      "jonkoping": 49
+    },
+    "currency": "SEK",
+    "spicy": null
+  },
+  {
+    "id": 21,
+    "name": "Babi",
+    "description": {
+      "en": "Lettuce “wrap” with baked pork and hoisin sauce",
+      "sv": "Sallads-”wrap” med bakad fläsksida och hoisin-sås"
+    },
+    "price": {
+      "stockholm": 49,
+      "umea": 49,
+      "jonkoping": 49
+    },
+    "currency": "SEK",
+    "spicy": null
+  },
+  {
+    "id": 22,
+    "name": "Jungle Rolls Salad",
+    "description": {
+      "en":
+        "Crispy spring rolls, mixed salad, fresh herbs, rice noodles, roasted onions, sour carrot and sesame oil / vinegar dressing",
+      "sv":
+        "Krispiga vårrullar, blandsallad, färska örter, risnudlar, rostad lök, syrlig morot och sesam-/vinägerdressing"
+    },
+    "price": {
+      "stockholm": 95,
+      "umea": 99,
+      "jonkoping": 99
+    },
+    "currency": "SEK",
+    "spicy": null
+  },
+  {
+    "id": 23,
+    "name": "Crispy Rolls",
+    "description": {
+      "en": "Vietnamese vegetarian spring rolls and nuoc cham",
+      "sv": "Vietnamesiska vegetariska vårrullar och nuoc cham"
+    },
+    "price": {
+      "stockholm": 45,
+      "umea": 49,
+      "jonkoping": 49
+    },
+    "currency": "SEK",
+    "spicy": null
+  },
+  {
+    "id": 24,
+    "name": "Yalow Green",
+    "description": {
+      "en":
+        "Kaeng Luong curry with chickpeas, coconut milk, coconut flakes, roasted onions, basil and rice",
+      "sv":
+        "Kaeng Luong-curry med kikärtsbollar, kokosmjölk, kokosflakes, rostad lök, basilika och ris"
+    },
+    "price": {
+      "jonkoping": 105
+    },
+    "currency": "SEK",
+    "spicy": 1
+  },
+  {
+    "id": 25,
+    "name": "Miso miyagi",
+    "description": {
+      "en":
+        "Miso noodle soup with vegan sprouts, pak choy, nori, spring onions, sesame pasta and wheat noodles",
+      "sv":
+        "Miso nudelsoppa med veganfärs, pak choy, nori, vårlök, sesampasta och vetenudlar"
+    },
+    "price": {
+      "jonkoping": 105
+    },
+    "currency": "SEK",
+    "spicy": 1
+  },
+  {
+    "id": 26,
+    "name": "Hanamii",
+    "description": {
+      "en":
+        "Raw salmon, avocado, nori, pickled red onion, red cabbage, sesamejonnäs and rice",
+      "sv":
+        "Rå lax, avokado, nori, syltad rödlök, rödkål, sesammajonnäs och ris"
+    },
+    "price": {
+      "jonkoping": 115
+    },
+    "currency": "SEK",
+    "spicy": 1
+  }
 ]
