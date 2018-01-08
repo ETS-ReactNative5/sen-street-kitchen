@@ -21,7 +21,7 @@
     ],
     "cashless": true,
     "foodora": "https://www.foodora.se/restaurant/s6lx/sen-street-kitchen",
-    "menu": [1, 4, 5, 3, 12, 8, 2, 6, 9, 13, 11, 10, 17, 15, 14, 16, 18, 19]
+    "menu": [1, 4, 5, 3, 12, 8, 2, 6, 9, 25, 13, 11, 10, 17, 15, 14, 16, 18, 19]
   },
   {
     "slug": "kungsbron-8",
@@ -46,7 +46,7 @@
     "cashless": true,
     "foodora":
       "https://www.foodora.se/restaurant/s5ql/sen-street-kitchen-kungsbron",
-    "menu": [1, 4, 5, 3, 12, 8, 2, 6, 9, 13, 11, 10, 17, 15, 14, 16, 18, 19]
+    "menu": [1, 4, 5, 3, 12, 8, 2, 6, 9, 25, 13, 11, 10, 17, 15, 14, 16, 18, 19]
   },
   {
     "slug": "avion-shopping",

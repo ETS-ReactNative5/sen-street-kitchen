@@ -9,7 +9,7 @@
         "Het Kaeng Phet-curry med kycklingfilé, citrongräs, galanga, kokosmjölk, broccoli, champinjoner och ris"
     },
     "price": {
-      "stockholm": 95,
+      "stockholm": 99,
       "umea": 99,
       "jonkoping": 99
     },
@@ -26,7 +26,7 @@
         "Yakinikumarinerat nötkött med krispig sallad, syrlig rättika, kimchi, sesamgroddar, sesamspenat och ris"
     },
     "price": {
-      "stockholm": 99,
+      "stockholm": 105,
       "umea": 105,
       "jonkoping": 105
     },
@@ -43,7 +43,7 @@
         "Malaysisk nudelsoppa med penang laksa, kycklingfilé, pak choi, groddar, färska örter och vetenudlar"
     },
     "price": {
-      "stockholm": 99,
+      "stockholm": 105,
       "umea": 105,
       "jonkoping": 105
     },
@@ -60,7 +60,7 @@
         "Grillad kycklingfilé i soja- och ingefärssås, sesammajonnäs, syrlig rättika och gulbeta samt ris"
     },
     "price": {
-      "stockholm": 95,
+      "stockholm": 99,
       "umea": 99,
       "jonkoping": 99
     },
@@ -77,7 +77,7 @@
         "Vietnamesisk nudelsoppa med oxbuljong, lå̊gtempat nötkött, groddar, färska örter och risnudlar"
     },
     "price": {
-      "stockholm": 99,
+      "stockholm": 105,
       "jonkoping": 105,
       "umea": 105
     },
@@ -94,7 +94,7 @@
         "Sesammarinerat nötkött med krispiga blad, kimchi, sesamgroddar och ris"
     },
     "price": {
-      "stockholm": 99,
+      "stockholm": 105,
       "umea": 105,
       "jonkoping": 105
     },
@@ -124,7 +124,7 @@
         "Grillad kycklingfilé med glasnudlar på̊ sötpotatis, blandsallad och rotfrukter"
     },
     "price": {
-      "stockholm": 95,
+      "stockholm": 99,
       "umea": 99,
       "jonkoping": 99
     },
@@ -139,7 +139,7 @@
       "sv": "Grillad laxfilé i ingefära, machésallad, syrlig lök och ris"
     },
     "price": {
-      "stockholm": 109,
+      "stockholm": 115,
       "umea": 115,
       "jonkoping": 115
     },
@@ -156,7 +156,7 @@
         "Tofu med RAW-nudlar i tamarindså̊s, blandsallad, färska örter och jordnötter"
     },
     "price": {
-      "stockholm": 95,
+      "stockholm": 99,
       "umea": 99,
       "jonkoping": 99
     },
@@ -171,7 +171,7 @@
       "sv": "Ångade buns med bräserad fläsksida, syrlig lök och jordnötter"
     },
     "price": {
-      "stockholm": 85,
+      "stockholm": 89,
       "umea": 89,
       "jonkoping": 89
     },
@@ -188,7 +188,7 @@
         "Citrongräsmarinerat nötkött med blandsallad, färska örter, syrlig morot och rättika, risnudlar, rostad lök och jordnötter"
     },
     "price": {
-      "stockholm": 95,
+      "stockholm": 99,
       "umea": 99,
       "jonkoping": 99
     },
@@ -205,7 +205,7 @@
         "Vetetortillas med sesammarinerat nötkött, krispig sallad, kimchi, syrlig lök, ris och ssamjang-så̊s"
     },
     "price": {
-      "stockholm": 85,
+      "stockholm": 89,
       "umea": 89,
       "jonkoping": 89
     },
@@ -235,7 +235,7 @@
       "sv": "Sallads-”wrap” med sesammarinerat nötkött och ssamjang-sås"
     },
     "price": {
-      "stockholm": 49,
+      "stockholm": 55,
       "umea": 55,
       "jonkoping": 55
     },
@@ -312,7 +312,7 @@
       "sv": "Friterad ekologisk tofu och ingefärsdressing"
     },
     "price": {
-      "stockholm": 45,
+      "stockholm": 49,
       "umea": 49,
       "jonkoping": 49
     },
@@ -344,7 +344,7 @@
         "Krispiga vårrullar, blandsallad, färska örter, risnudlar, rostad lök, syrlig morot och sesam-/vinägerdressing"
     },
     "price": {
-      "stockholm": 95,
+      "stockholm": 99,
       "umea": 99,
       "jonkoping": 99
     },
@@ -359,7 +359,7 @@
       "sv": "Vietnamesiska vegetariska vårrullar och nuoc cham"
     },
     "price": {
-      "stockholm": 45,
+      "stockholm": 49,
       "umea": 49,
       "jonkoping": 49
     },
@@ -391,6 +391,7 @@
         "Miso nudelsoppa med veganfärs, pak choy, nori, vårlök, sesampasta och vetenudlar"
     },
     "price": {
+      "stockholm": 105,
       "jonkoping": 105
     },
     "currency": "SEK",
