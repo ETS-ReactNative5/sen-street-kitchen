@@ -10,6 +10,10 @@ class Menu extends React.Component {
         this.displayName = 'Menu';
     }
 
+    shouldComponentUpdate(nextProps) {
+        return this.props.locale !== nextProps.locale;
+    }
+
     render() {
         const { locale } = this.props;
 

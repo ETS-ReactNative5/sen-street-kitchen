@@ -15,6 +15,10 @@ class TopBar extends React.Component {
         this.displayName = 'TopBar';
     }
 
+    shouldComponentUpdate(nextProps) {
+        return this.props.locale !== nextProps.locale;
+    }
+
     render() {
         const today = new Date().getDay();
 
