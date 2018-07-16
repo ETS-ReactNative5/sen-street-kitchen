@@ -60,10 +60,12 @@ class Restaurant extends React.Component {
                     : 'Kontantlös restaurang',
             ogDescription:
                 locale === 'en'
-                    ? `View the menu for SEN Street Kitchen, ${restaurant.name}, ${restaurant
-                          .address.city}.'`
-                    : `Se menyn för SEN Street Kitchen, ${restaurant.name}, ${restaurant
-                          .address.city}.'`,
+                    ? `View the menu for SEN Street Kitchen, ${
+                          restaurant.name
+                      }, ${restaurant.address.city}.'`
+                    : `Se menyn för SEN Street Kitchen, ${restaurant.name}, ${
+                          restaurant.address.city
+                      }.'`,
             orderNow:
                 locale === 'en' ? 'Order Online Now!' : 'Beställ online nu!',
             downloadMenu: locale === 'en' ? 'Download Menu' : 'Ladda ner meny',
@@ -94,7 +96,6 @@ class Restaurant extends React.Component {
                         <div className="restaurant__city">
                             {restaurant.address.city}
                         </div>
-
                         <h1 className="restaurant__name">
                             {restaurant.foodora ? (
                                 <span className="has-foodora">
@@ -113,7 +114,6 @@ class Restaurant extends React.Component {
                                 <span>{restaurant.name}</span>
                             )}
                         </h1>
-
                         <OpeningHours
                             locale={locale}
                             openingHours={restaurant.openingHours}
@@ -156,13 +156,13 @@ class Restaurant extends React.Component {
                                 </span>
                             )}
                         </div>
-
                         <div className="restaurant__contact">
                             <span>
                                 <PdfIcon />
                                 <a
-                                    href={`${process.env
-                                        .PUBLIC_URL}/pdf/sen-${slug(
+                                    href={`${
+                                        process.env.PUBLIC_URL
+                                    }/pdf/sen-${slug(
                                         restaurant.address.city
                                     )}-menu.pdf`}
                                 >
@@ -173,20 +173,19 @@ class Restaurant extends React.Component {
                             <span>
                                 <PdfIcon />
                                 <a
-                                    href={`${process.env
-                                        .PUBLIC_URL}/pdf/sen-allergiguide.pdf`}
+                                    href={`${
+                                        process.env.PUBLIC_URL
+                                    }/pdf/sen-allergiguide.pdf`}
                                 >
                                     {str.downloadAllergyGuide}
                                 </a>
                             </span>
                         </div>
-
                         <Dishes
                             locale={locale}
                             city={restaurant.address.city}
                             dishes={restaurant.menu}
                         />
-
                         <Map restaurant={restaurant} />
                     </div>
                 ) : null}

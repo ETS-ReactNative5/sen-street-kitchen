@@ -1,4 +1,4 @@
-const checkClosed = ({string, restaurant, locale, deviation = false}) => {
+const checkClosed = ({ string, restaurant, locale, deviation = false }) => {
     if (deviation) {
         // check for deviating opening hours i.e. holidays etc
         const date = new Date();
@@ -6,16 +6,31 @@ const checkClosed = ({string, restaurant, locale, deviation = false}) => {
         switch (restaurant) {
         case 'regeringsgatan-26':
             switch (today) {
-            case '12-27':
-            case '12-28':
-            case '12-29':
-                string = '11-15';
-                break;
-            case '12-30':
-            case '1-1':
-            case '1-6':
-            case '1-7':
-                string = 'Closed';
+                    // v28
+            case '7-9':
+            case '7-10':
+            case '7-11':
+            case '7-12':
+            case '7-13':
+                    // v29
+            case '7-16':
+            case '7-17':
+            case '7-18':
+            case '7-19':
+            case '7-20':
+                    // v30
+            case '7-23':
+            case '7-24':
+            case '7-25':
+            case '7-26':
+            case '7-27':
+                    // v31
+            case '7-30':
+            case '7-31':
+            case '8-1':
+            case '8-2':
+            case '8-3':
+                string = '10-15';
                 break;
             default:
                 break;
@@ -23,23 +38,13 @@ const checkClosed = ({string, restaurant, locale, deviation = false}) => {
             break;
         case 'kungsbron-8':
             switch (today) {
-            case '12-23':
-            case '12-24':
-            case '12-25':
-            case '12-26':
-            case '12-27':
-            case '12-28':
-            case '12-29':
-            case '12-30':
-            case '12-31':
-            case '1-1':
-                string = 'Closed';
-                break;
-            case '1-2':
-            case '1-3':
-            case '1-4':
-            case '1-5':
-                string = '11-15';
+                    // v30
+            case '7-23':
+            case '7-24':
+            case '7-25':
+            case '7-26':
+            case '7-27':
+                string = '10-15';
                 break;
             default:
                 break;
@@ -47,15 +52,6 @@ const checkClosed = ({string, restaurant, locale, deviation = false}) => {
             break;
         case 'avion-shopping':
             switch (today) {
-            case '1-1':
-                string = '10-15';
-                break;
-            case '1-5':
-                string = '10-20';
-                break;
-            case '1-6':
-                string = '10-18';
-                break;
             default:
                 break;
             }
