@@ -46,21 +46,6 @@ class OpeningHours extends React.Component {
                         locale: locale
                     })}
                 </span>
-                {this.props.restaurant === 'regeringsgatan-26' && (
-                    <div>
-                        <br />
-                        v28-v31 {str.monFri}{' '}
-                        <span className="opening-hours__period">10-15</span>
-                    </div>
-                )}
-
-                {this.props.restaurant === 'kungsbron-8' && (
-                    <div>
-                        <br />
-                        v30 {str.monFri}{' '}
-                        <span className="opening-hours__period">10-15</span>
-                    </div>
-                )}
             </div>
         );
     }
