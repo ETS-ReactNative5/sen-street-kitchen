@@ -14,6 +14,7 @@ import PdfIcon from './../components/PdfIcon';
 
 import ogimage from './../assets/ogimage.png';
 import foodora from './../assets/foodora.svg';
+import tripadvisor from './../assets/tripadvisor.png';
 import restaurants from './../data/restaurants.json';
 import './Restaurant.css';
 
@@ -97,18 +98,36 @@ class Restaurant extends React.Component {
                             {restaurant.address.city}
                         </div>
                         <h1 className="restaurant__name">
-                            {restaurant.foodora ? (
-                                <span className="has-foodora">
-                                    <span className="foodora-title">
-                                        {restaurant.name}
-                                    </span>
-                                    <a href={restaurant.foodora}>
-                                        <img
-                                            className="foodora"
-                                            src={foodora}
-                                            alt="Foodora"
-                                        />
-                                    </a>
+                            {restaurant.foodora || restaurant.tripadvisor ? (
+                                <span>
+                                    {restaurant.foodora && (
+                                        <span className="has-foodora">
+                                            <span className="foodora-title">
+                                                {restaurant.name}
+                                            </span>
+                                            <a href={restaurant.foodora}>
+                                                <img
+                                                    className="foodora"
+                                                    src={foodora}
+                                                    alt="Foodora"
+                                                />
+                                            </a>
+                                        </span>
+                                    )}
+                                    {restaurant.tripadvisor && (
+                                        <span className="has-foodora">
+                                            <span className="foodora-title">
+                                                {restaurant.name}
+                                            </span>
+                                            <a href={restaurant.tripadvisor}>
+                                                <img
+                                                    className="tripadvisor"
+                                                    src={tripadvisor}
+                                                    alt="Tripadvisor"
+                                                />
+                                            </a>
+                                        </span>
+                                    )}
                                 </span>
                             ) : (
                                 <span>{restaurant.name}</span>
