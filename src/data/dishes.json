@@ -7,9 +7,9 @@
       "sv": "Het Kaeng Phet-curry med kycklingfilé, citrongräs, galanga, kokosmjölk, broccoli, champinjoner och ris"
     },
     "price": {
-      "stockholm": 99,
-      "umea": 99,
-      "jonkoping": 99
+      "stockholm": 105,
+      "umea": 105,
+      "jonkoping": 105
     },
     "currency": "SEK",
     "spicy": 2
@@ -22,9 +22,9 @@
       "sv": "Yakinikumarinerat nötkött med krispig sallad, syrlig rättika, kimchi, sesamgroddar, sesamspenat och ris"
     },
     "price": {
-      "stockholm": 105,
-      "umea": 105,
-      "jonkoping": 105
+      "stockholm": 109,
+      "umea": 109,
+      "jonkoping": 109
     },
     "currency": "SEK",
     "spicy": 1
@@ -37,9 +37,9 @@
       "sv": "Malaysisk nudelsoppa med penang laksa, kycklingfilé, pak choi, groddar, färska örter och vetenudlar"
     },
     "price": {
-      "stockholm": 105,
-      "umea": 105,
-      "jonkoping": 105
+      "stockholm": 109,
+      "umea": 109,
+      "jonkoping": 109
     },
     "currency": "SEK",
     "spicy": 1
@@ -52,9 +52,9 @@
       "sv": "Grillad kycklingfilé i soja- och ingefärssås, sesammajonnäs, syrlig rättika och gulbeta samt ris"
     },
     "price": {
-      "stockholm": 99,
-      "umea": 99,
-      "jonkoping": 99
+      "stockholm": 105,
+      "umea": 105,
+      "jonkoping": 105
     },
     "currency": "SEK",
     "spicy": null
@@ -67,9 +67,9 @@
       "sv": "Vietnamesisk nudelsoppa med oxbuljong, lå̊gtempat nötkött, groddar, färska örter och risnudlar"
     },
     "price": {
-      "stockholm": 105,
-      "jonkoping": 105,
-      "umea": 105
+      "stockholm": 109,
+      "jonkoping": 109,
+      "umea": 109
     },
     "currency": "SEK",
     "spicy": 1
@@ -82,9 +82,9 @@
       "sv": "Sesammarinerat nötkött med krispiga blad, kimchi, sesamgroddar och ris"
     },
     "price": {
-      "stockholm": 105,
-      "umea": 105,
-      "jonkoping": 105
+      "stockholm": 109,
+      "umea": 109,
+      "jonkoping": 109
     },
     "currency": "SEK",
     "spicy": 1
@@ -110,9 +110,9 @@
       "sv": "Grillad kycklingfilé med glasnudlar på̊ sötpotatis, blandsallad och rotfrukter"
     },
     "price": {
-      "stockholm": 99,
-      "umea": 99,
-      "jonkoping": 99
+      "stockholm": 105,
+      "umea": 105,
+      "jonkoping": 105
     },
     "currency": "SEK",
     "spicy": null
@@ -125,9 +125,9 @@
       "sv": "Grillad laxfilé i ingefära, machésallad, syrlig lök och ris"
     },
     "price": {
-      "stockholm": 115,
-      "umea": 115,
-      "jonkoping": 115
+      "stockholm": 119,
+      "umea": 119,
+      "jonkoping": 119
     },
     "currency": "SEK",
     "spicy": null
@@ -140,9 +140,9 @@
       "sv": "Tofu med RAW-nudlar i tamarindså̊s, blandsallad, färska örter och jordnötter"
     },
     "price": {
-      "stockholm": 99,
-      "umea": 99,
-      "jonkoping": 99
+      "stockholm": 105,
+      "umea": 105,
+      "jonkoping": 105
     },
     "currency": "SEK",
     "spicy": null
@@ -170,9 +170,9 @@
       "sv": "Citrongräsmarinerat nötkött med blandsallad, färska örter, syrlig morot och rättika, risnudlar, rostad lök och jordnötter"
     },
     "price": {
-      "stockholm": 99,
-      "umea": 99,
-      "jonkoping": 99
+      "stockholm": 105,
+      "umea": 105,
+      "jonkoping": 105
     },
     "currency": "SEK",
     "spicy": null
@@ -185,9 +185,9 @@
       "sv": "Vetetortillas med sesammarinerat nötkött, krispig sallad, kimchi, syrlig lök, ris och ssamjang-så̊s"
     },
     "price": {
-      "stockholm": 89,
-      "umea": 89,
-      "jonkoping": 89
+      "stockholm": 95,
+      "umea": 95,
+      "jonkoping": 95
     },
     "currency": "SEK",
     "spicy": 1
@@ -230,7 +230,7 @@
       "sv": "Ångade dumplings med räkfyllning, dressing på̊ sesam och vinäger"
     },
     "price": {
-      "stockholm": 69,
+      "stockholm": 49,
       "umea": 49,
       "jonkoping": 49
     },
@@ -245,9 +245,9 @@
       "sv": "Färska Vietnamesiska vårrullar med handskalade räkor och nuoc cham"
     },
     "price": {
-      "stockholm": 49,
-      "umea": 49,
-      "jonkoping": 49
+      "stockholm": 55,
+      "umea": 55,
+      "jonkoping": 55
     },
     "currency": "SEK",
     "spicy": null
@@ -320,9 +320,9 @@
       "sv": "Krispiga vårrullar, blandsallad, färska örter, risnudlar, rostad lök, syrlig morot och sesam-/vinägerdressing"
     },
     "price": {
-      "stockholm": 99,
-      "umea": 99,
-      "jonkoping": 99
+      "stockholm": 105,
+      "umea": 105,
+      "jonkoping": 105
     },
     "currency": "SEK",
     "spicy": null
@@ -350,8 +350,8 @@
       "sv": "Kaeng Luong-curry med kikärtsbollar, kokosmjölk, kokosflakes, rostad lök, basilika och ris"
     },
     "price": {
-      "jonkoping": 105,
-      "umea": 105
+      "jonkoping": 109,
+      "umea": 109
     },
     "currency": "SEK",
     "spicy": 1
@@ -364,9 +364,9 @@
       "sv": "Miso nudelsoppa med veganfärs, pak choy, nori, vårlök, sesampasta och vetenudlar"
     },
     "price": {
-      "stockholm": 105,
-      "jonkoping": 105,
-      "umea": 105
+      "stockholm": 109,
+      "jonkoping": 109,
+      "umea": 109
     },
     "currency": "SEK",
     "spicy": 1
@@ -379,8 +379,8 @@
       "sv": "Rå lax, avokado, nori, syltad rödlök, rödkål, sesammajonnäs och ris"
     },
     "price": {
-      "jonkoping": 115,
-      "umea": 115
+      "jonkoping": 119,
+      "umea": 119
     },
     "currency": "SEK",
     "spicy": 1
