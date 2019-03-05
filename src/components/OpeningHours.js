@@ -14,46 +14,20 @@ class OpeningHours extends React.Component {
         const { openingHours, locale } = this.props;
         const str = {
             monFri: locale === 'en' ? 'Mon-Fri' : 'Mån-Fre',
-            monThur: locale === 'en' ? 'Mon-Thurs' : 'Mån-Tors',
-            fri: locale === 'en' ? 'Fri' : 'Fre',
             sat: locale === 'en' ? 'Sat' : 'Lör',
             sun: locale === 'en' ? 'Sun' : 'Sön'
         };
 
         return (
             <div className="opening-hours">
-                {this.props.restaurant === 'regeringsgatan-26' ? (
-                    <span>
-                        <span className="opening-hours__days">{str.monThur}</span>
-                        <span className="opening-hours__period">
-                            {checkClosed({
-                                string: openingHours[1],
-                                restaurant: this.props.restaurant,
-                                locale: locale
-                            })}
-                        </span>
-                        <span className="opening-hours__sep">|</span>
-                        <span className="opening-hours__days">{str.fri}</span>
-                        <span className="opening-hours__period">
-                            {checkClosed({
-                                string: openingHours[5],
-                                restaurant: this.props.restaurant,
-                                locale: locale
-                            })}
-                        </span>
-                    </span>
-                ) : (
-                    <span>
-                        <span className="opening-hours__days">{str.monFri}</span>
-                        <span className="opening-hours__period">
-                            {checkClosed({
-                                string: openingHours[1],
-                                restaurant: this.props.restaurant,
-                                locale: locale
-                            })}
-                        </span>
-                    </span>
-                )}
+                <span className="opening-hours__days">{str.monFri}</span>
+                <span className="opening-hours__period">
+                    {checkClosed({
+                        string: openingHours[1],
+                        restaurant: this.props.restaurant,
+                        locale: locale
+                    })}
+                </span>
                 <span className="opening-hours__sep">|</span>
                 <span className="opening-hours__days">{str.sat}</span>
                 <span className="opening-hours__period">
