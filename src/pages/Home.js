@@ -29,7 +29,9 @@ const Home = class extends React.Component {
                     ? 'Simple, fast, healthy and fresh.'
                     : 'Enkelt, snabbt, nyttigt och fräscht.',
             ourRestaurants:
-                locale === 'en' ? 'Our Restaurants' : 'Våra restauranger'
+                locale === 'en' ? 'Our Restaurants' : 'Våra restauranger',
+            opensQ42019:
+                locale === 'en' ? 'Opens Q4 2019' : 'Öppnar Q4 2019'
         };
 
         return (
@@ -75,6 +77,11 @@ const Home = class extends React.Component {
                             </Link>
                         </div>
                     ))}
+                    <div className="home__restaurant">
+                        <div>Umeå</div>
+                        <h2>Renmarkstorget 12</h2>
+                        <p>{str.opensQ42019}</p>
+                    </div>
                 </div>
             </div>
         );
