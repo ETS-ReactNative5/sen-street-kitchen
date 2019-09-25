@@ -69,9 +69,7 @@ class Restaurant extends React.Component {
                       }.'`,
             orderNow:
                 locale === 'en' ? 'Order Online Now!' : 'Beställ online nu!',
-            downloadMenu: locale === 'en' ? 'Download Menu' : 'Ladda ner meny',
-            downloadAllergyGuide:
-                locale === 'en' ? 'Allergy Guide' : 'Allergiguide'
+            downloadMenu: locale === 'en' ? 'Download Menu' : 'Ladda ner meny'
         };
 
         return (
@@ -186,17 +184,6 @@ class Restaurant extends React.Component {
                                     )}-menu.pdf`}
                                 >
                                     {str.downloadMenu}
-                                </a>
-                            </span>
-
-                            <span>
-                                <PdfIcon />
-                                <a
-                                    href={`${
-                                        process.env.PUBLIC_URL
-                                    }/pdf/sen-allergiguide.pdf`}
-                                >
-                                    {str.downloadAllergyGuide}
                                 </a>
                             </span>
                         </div>
