@@ -8,7 +8,7 @@
     },
     "price": {
       "stockholm": 105,
-      "umea": 105,
+      "umea": 109,
       "jonkoping": 105
     },
     "currency": "SEK",
@@ -23,7 +23,7 @@
     },
     "price": {
       "stockholm": 109,
-      "umea": 109,
+      "umea": 115,
       "jonkoping": 109
     },
     "currency": "SEK",
@@ -38,7 +38,7 @@
     },
     "price": {
       "stockholm": 109,
-      "umea": 109,
+      "umea": 115,
       "jonkoping": 109
     },
     "currency": "SEK",
@@ -53,7 +53,7 @@
     },
     "price": {
       "stockholm": 105,
-      "umea": 105,
+      "umea": 109,
       "jonkoping": 105
     },
     "currency": "SEK",
@@ -69,7 +69,7 @@
     "price": {
       "stockholm": 109,
       "jonkoping": 109,
-      "umea": 109
+      "umea": 115
     },
     "currency": "SEK",
     "spicy": 1
@@ -83,7 +83,7 @@
     },
     "price": {
       "stockholm": 109,
-      "umea": 109,
+      "umea": 115,
       "jonkoping": 109
     },
     "currency": "SEK",
@@ -111,7 +111,7 @@
     },
     "price": {
       "stockholm": 105,
-      "umea": 105,
+      "umea": 109,
       "jonkoping": 105
     },
     "currency": "SEK",
@@ -126,7 +126,7 @@
     },
     "price": {
       "stockholm": 119,
-      "umea": 119,
+      "umea": 129,
       "jonkoping": 119
     },
     "currency": "SEK",
@@ -156,7 +156,7 @@
     },
     "price": {
       "stockholm": 89,
-      "umea": 89,
+      "umea": 99,
       "jonkoping": 89
     },
     "currency": "SEK",
@@ -171,7 +171,7 @@
     },
     "price": {
       "stockholm": 105,
-      "umea": 105,
+      "umea": 109,
       "jonkoping": 105
     },
     "currency": "SEK",
@@ -186,7 +186,7 @@
     },
     "price": {
       "stockholm": 95,
-      "umea": 95,
+      "umea": 99,
       "jonkoping": 95
     },
     "currency": "SEK",
@@ -201,7 +201,7 @@
     },
     "price": {
       "stockholm": 49,
-      "umea": 49,
+      "umea": 55,
       "jonkoping": 49
     },
     "currency": "SEK",
@@ -216,7 +216,7 @@
     },
     "price": {
       "stockholm": 55,
-      "umea": 55,
+      "umea": 65,
       "jonkoping": 55
     },
     "currency": "SEK",
@@ -231,7 +231,7 @@
     },
     "price": {
       "stockholm": 49,
-      "umea": 49,
+      "umea": 55,
       "jonkoping": 49
     },
     "currency": "SEK",
@@ -246,7 +246,7 @@
     },
     "price": {
       "stockholm": 55,
-      "umea": 55,
+      "umea": 59,
       "jonkoping": 55
     },
     "currency": "SEK",
@@ -261,7 +261,7 @@
     },
     "price": {
       "stockholm": 39,
-      "umea": 39,
+      "umea": 42,
       "jonkoping": 39
     },
     "currency": "SEK",
@@ -276,7 +276,7 @@
     },
     "price": {
       "stockholm": 39,
-      "umea": 39,
+      "umea": 42,
       "jonkoping": 39
     },
     "currency": "SEK",
@@ -306,7 +306,7 @@
     },
     "price": {
       "stockholm": 49,
-      "umea": 49,
+      "umea": 55,
       "jonkoping": 49
     },
     "currency": "SEK",
@@ -321,7 +321,7 @@
     },
     "price": {
       "stockholm": 105,
-      "umea": 105,
+      "umea": 115,
       "jonkoping": 105
     },
     "currency": "SEK",
@@ -336,7 +336,7 @@
     },
     "price": {
       "stockholm": 49,
-      "umea": 49,
+      "umea": 55,
       "jonkoping": 49
     },
     "currency": "SEK",
@@ -351,7 +351,7 @@
     },
     "price": {
       "jonkoping": 109,
-      "umea": 109
+      "umea": 115
     },
     "currency": "SEK",
     "spicy": 1
@@ -366,7 +366,7 @@
     "price": {
       "stockholm": 109,
       "jonkoping": 109,
-      "umea": 109
+      "umea": 115
     },
     "currency": "SEK",
     "spicy": 1
@@ -380,7 +380,7 @@
     },
     "price": {
       "jonkoping": 119,
-      "umea": 119
+      "umea": 129
     },
     "currency": "SEK",
     "spicy": 1
