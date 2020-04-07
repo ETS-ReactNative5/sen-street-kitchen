@@ -1,8 +1,7 @@
 import React from "react";
 
-import checkClosed from "./../helpers/checkClosed";
-
-import restaurants from "./../data/restaurants";
+// import checkClosed from "./../helpers/checkClosed";
+// import restaurants from "./../data/restaurants";
 
 import "./TopBar.css";
 
@@ -20,35 +19,22 @@ class TopBar extends React.Component {
   }
 
   render() {
-    const today = new Date().getDay();
+    // const today = new Date().getDay();
 
     const { locale, setLocaleToSwedish, setLocaleToEnglish } = this.props;
 
     return (
       <div className="topbar">
-        {locale === "en" ? (
-          <div className="topbar__title">Opening Hours Today</div>
-        ) : (
-          <div className="topbar__title">Öppettider i dag</div>
+        <div className="topbar__title">{locale==='en'?'Opening Hours':'Öppettider'}</div>
+        {locale==='en'?(
+          <span className="topbar__name">
+            Deviations from normal opening hours may occur. For today's opening hours, we refer to SEN Street Kitchen's <a href="https://www.instagram.com/senstreetkitchen/">Instagram</a> and <a href="https://www.facebook.com/SenStockholm">Facebook</a> stories.
+          </span>
+        ):(
+          <span className="topbar__name">
+            Avvikelser från normala öppettider kan förekomma. För dagens öppettider hänvisar vi till SEN Street Kitchens stories på <a href="https://www.instagram.com/senstreetkitchen/">Instagram</a> och <a href="https://www.facebook.com/SenStockholm">Facebook</a>.
+          </span>
         )}
-
-        {restaurants.map(({ units }) =>
-          units.map(restaurant => (
-            <div className="topbar__restaurant" key={restaurant.slug}>
-              <span className="topbar__name">{restaurant.name}</span>
-
-              <span className="topbar__hours">
-                {checkClosed({
-                  string: restaurant.openingHours[today],
-                  restaurant: restaurant.slug,
-                  locale: locale,
-                  deviation: true
-                })}
-              </span>
-            </div>
-          ))
-        )}
-
         {locale === "en" ? (
           <img
             onClick={setLocaleToSwedish.bind(this)}

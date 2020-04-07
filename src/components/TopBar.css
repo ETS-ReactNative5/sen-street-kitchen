@@ -1,22 +1,31 @@
 .topbar {
     padding: 1em;
+
     text-transform: uppercase;
+
     color: #fff;
     background-color: #333;
 }
 
 .topbar__title {
     margin-right: 1em;
+
     color: #4c9962;
 }
 
 .topbar__name {
-    font-weight: 600;
     margin-right: 0.5em;
+
+    font-weight: 600;
+}
+
+.topbar__name a {
+    color: #fff;
 }
 
 .topbar__hours {
     margin-right: 1em;
+
     color: #e98457;
 }
 
@@ -34,7 +43,6 @@
 .flag {
     width: auto;
     height: 16px;
-    margin-top: 3px;
 }
 .flag:hover {
     cursor: pointer;
