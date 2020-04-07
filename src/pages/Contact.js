@@ -1,80 +1,73 @@
-import 'whatwg-fetch';
-import React from 'react';
-import { Link } from 'react-router';
-import Helmet from 'react-helmet';
+import "whatwg-fetch";
+import React from "react";
+import { Link } from "react-router";
+import Helmet from "react-helmet";
 
-import restaurants from './../data/restaurants.json';
-import ogimage from './../assets/ogimage.png';
-import './Contact.css';
+import restaurants from "./../data/restaurants.json";
+import ogimage from "./../assets/ogimage.png";
+import "./Contact.css";
 
 class Contact extends React.Component {
-    constructor(props) {
-        super(props);
-        this.displayName = 'Contact';
-    }
+  constructor(props) {
+    super(props);
+    this.displayName = "Contact";
+  }
 
-    render() {
-        const { locale } = this.props;
-        const str = {
-            ogTitle: locale === 'en' ? (
-                    'Contact Us'
-                ) : (
-                    'Kontakta oss'
-                ),
-            subtitle: locale === 'en' ? (
-                    'What’s on your mind?'
-                ) : (
-                    'Vi vill gärna höra från dig!'
-                ),
-            getInTouch: locale === 'en' ? (
-                    'Get in Touch'
-                ) : (
-                    'Kontakta oss'
-                ),
-            workWithSEN: locale === 'en' ? (
-                    'If you’d like to work with SEN, check out our'
-                ) : (
-                    'Om du vill arbeta tillsammans med SEN, kolla in vår'
-                ),
-            jobsPage: locale === 'en' ? (
-                    'jobs page'
-                ) : (
-                    'jobbsida'
-                )
-        };
+  render() {
+    const { locale } = this.props;
+    const str = {
+      ogTitle: locale === "en" ? "Contact Us" : "Kontakta oss",
+      subtitle:
+        locale === "en"
+          ? "What’s on your mind?"
+          : "Vi vill gärna höra från dig!",
+      getInTouch: locale === "en" ? "Get in Touch" : "Kontakta oss",
+      workWithSEN:
+        locale === "en"
+          ? "If you’d like to work with SEN, check out our"
+          : "Om du vill arbeta tillsammans med SEN, kolla in vår",
+      jobsPage: locale === "en" ? "jobs page" : "jobbsida"
+    };
 
-        return (
-            <div className="contact">
-                <Helmet
-                    title={ str.ogTitle + ' | SEN Street Kitchen' }
-                    meta={[
-                        { property: 'og:title',       content: str.ogTitle },
-                        { property: 'og:type',        content: 'article' },
-                        { property: 'og:description', content: str.ogDescription },
-                        { property: 'og:image',       content: document.location.origin + ogimage }
-                    ]}
-                />
+    return (
+      <div className="contact">
+        <Helmet
+          title={str.ogTitle + " | SEN Street Kitchen"}
+          meta={[
+            { property: "og:title", content: str.ogTitle },
+            { property: "og:type", content: "article" },
+            { property: "og:description", content: str.ogDescription },
+            {
+              property: "og:image",
+              content: document.location.origin + ogimage
+            }
+          ]}
+        />
 
-                <div className="contact__subtitle">
-                    { str.subtitle }
-                </div>
+        <div className="contact__subtitle">{str.subtitle}</div>
 
-                <h1 className="contact__title">{ str.getInTouch }</h1>
+        <h1 className="contact__title">{str.getInTouch}</h1>
 
-                <div className="contact__restaurants">
-                    { restaurants.map(resturant => (
-                        <div key={ resturant.slug } className="contact__restaurant">
-                            { resturant.address.street }<br />
-                            { resturant.address.zipCode } { resturant.address.city }<br />
-                            { resturant.address.country }<br />
-                            <br />
-                            { resturant.phoneNumber }<br/>
-                            <a href={ `mailto:${ resturant.email }` }>Email</a>
-                        </div>
-                    )) }
-                </div>
+        <div className="contact__restaurants">
+          {restaurants.map(({ units }) =>
+            units.map(resturant => (
+              <div key={resturant.slug} className="contact__restaurant">
+                {resturant.address.street}
+                <br />
+                {resturant.address.zipCode} {resturant.address.city}
+                <br />
+                {resturant.address.country}
+                <br />
+                <br />
+                {resturant.phoneNumber}
+                <br />
+                <a href={`mailto:${resturant.email}`}>Email</a>
+              </div>
+            ))
+          )}
+        </div>
 
-                {/*
+        {/*
                 <form
                     method="post"
                     action="http://www.example.com/cgi-bin/FormMail.pl"
@@ -102,14 +95,16 @@ class Contact extends React.Component {
                 </form>
                 */}
 
-                <p>{ str.workWithSEN } <Link to="/careers">{ str.jobsPage }</Link>.</p>
-            </div>
-        );
-    }
+        <p>
+          {str.workWithSEN} <Link to="/careers">{str.jobsPage}</Link>.
+        </p>
+      </div>
+    );
+  }
 }
 
 Contact.propTypes = {
-    locale: React.PropTypes.string
+  locale: React.PropTypes.string
 };
 
 export default Contact;

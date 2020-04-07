@@ -1,148 +1,230 @@
 [
   {
-    "slug": "regeringsgatan-26",
-    "name": "Regeringsgatan 26",
-    "phoneNumber": "08-23 48 88",
-    "email": "regeringsgatan26@senstreetkitchen.se",
-    "address": {
-      "street": "Regeringsgatan 26",
-      "zipCode": "111 22",
-      "city": "Stockholm",
-      "country": "Sweden"
-    },
-    "openingHours": [
-      "Closed",
-      "10-19",
-      "10-19",
-      "10-19",
-      "10-19",
-      "10-19",
-      "11-15"
-    ],
-    "cashless": true,
-    "foodora": "https://www.foodora.se/restaurant/s6lx/sen-street-kitchen",
-    "menu": [1, 4, 5, 3, 12, 8, 2, 6, 9, 25, 13, 11, 10, 17, 15, 14, 16, 18, 19]
-  },
-  {
-    "slug": "kungsbron-8",
-    "name": "Kungsbron 8",
-    "phoneNumber": "08-10 86 88",
-    "email": "kungsbron8@senstreetkitchen.se",
-    "address": {
-      "street": "Kungsbron 8",
-      "zipCode": "111 22",
-      "city": "Stockholm",
-      "country": "Sweden"
-    },
-    "openingHours": [
-      "Closed",
-      "11-19",
-      "11-19",
-      "11-19",
-      "11-19",
-      "11-19",
-      "Closed"
-    ],
-    "cashless": true,
-    "foodora": "https://www.foodora.se/restaurant/s5ql/sen-street-kitchen-kungsbron",
-    "menu": [1, 4, 5, 3, 12, 8, 2, 6, 9, 25, 13, 11, 10, 17, 15, 14, 16, 18, 19]
-  },
-  {
-    "slug": "avion-shopping",
-    "name": "AVION Shopping",
-    "phoneNumber": "090-818 88",
-    "email": "umea@senstreetkitchen.se",
-    "address": {
-      "street": "AVION Shopping, Marknadsgatan 3",
-      "zipCode": "904 22",
-      "city": "Umeå",
-      "country": "Sweden"
-    },
-    "openingHours": [
-      "10-18",
-      "10-20",
-      "10-20",
-      "10-20",
-      "10-20",
-      "10-20",
-      "10-18"
-    ],
-    "cashless": true,
-    "tripadvisor": "https://www.tripadvisor.se/Restaurant_Review-g189818-d10154003-Reviews-SEN_Street_Kitchen-Umea_Vasterbotten_County.html",
-    "menu": [
-      1,
-      4,
-      5,
-      3,
-      12,
-      8,
-      2,
-      13,
-      6,
-      9,
-      11,
-      22,
-      24,
-      25,
-      26,
-      17,
-      15,
-      14,
-      16,
-      19,
-      18,
-      23,
-      20,
-      21
+    "city": "Stockholm",
+    "slug": "stockholm",
+    "units": [
+      {
+        "slug": "regeringsgatan-26",
+        "name": "Regeringsgatan 26",
+        "phoneNumber": "08-23 48 88",
+        "email": "regeringsgatan26@senstreetkitchen.se",
+        "address": {
+          "street": "Regeringsgatan 26",
+          "zipCode": "111 22",
+          "city": "Stockholm",
+          "country": "Sweden"
+        },
+        "openingHours": [
+          "Closed",
+          "10-19",
+          "10-19",
+          "10-19",
+          "10-19",
+          "10-19",
+          "11-15"
+        ],
+        "cashless": true,
+        "foodora": "https://www.foodora.se/restaurant/s6lx/sen-street-kitchen",
+        "menu": [
+          1,
+          4,
+          5,
+          3,
+          12,
+          8,
+          2,
+          6,
+          9,
+          25,
+          13,
+          11,
+          10,
+          17,
+          15,
+          14,
+          16,
+          18,
+          19
+        ]
+      },
+      {
+        "slug": "kungsbron-8",
+        "name": "Kungsbron 8",
+        "phoneNumber": "08-10 86 88",
+        "email": "kungsbron8@senstreetkitchen.se",
+        "address": {
+          "street": "Kungsbron 8",
+          "zipCode": "111 22",
+          "city": "Stockholm",
+          "country": "Sweden"
+        },
+        "openingHours": [
+          "Closed",
+          "11-19",
+          "11-19",
+          "11-19",
+          "11-19",
+          "11-19",
+          "Closed"
+        ],
+        "cashless": true,
+        "foodora": "https://www.foodora.se/restaurant/s5ql/sen-street-kitchen-kungsbron",
+        "menu": [
+          1,
+          4,
+          5,
+          3,
+          12,
+          8,
+          2,
+          6,
+          9,
+          25,
+          13,
+          11,
+          10,
+          17,
+          15,
+          14,
+          16,
+          18,
+          19
+        ]
+      }
     ]
   },
   {
-    "slug": "asecs-jonkoping",
-    "name": "Asecs",
-    "phoneNumber": "036-293 92 88",
-    "email": "asecs@senstreetkitchen.se",
-    "address": {
-      "street": "Kompanigatan 16",
-      "zipCode": "553 05",
-      "city": "Jönköping",
-      "country": "Sweden"
-    },
-    "openingHours": [
-      "11-17",
-      "10-20",
-      "10-20",
-      "10-20",
-      "10-20",
-      "10-20",
-      "10-18"
-    ],
-    "cashless": true,
-    "foodora": null,
-    "menu": [
-      1,
-      4,
-      5,
-      3,
-      12,
-      8,
-      2,
-      13,
-      6,
-      9,
-      11,
-      22,
-      24,
-      25,
-      26,
-      17,
-      15,
-      14,
-      16,
-      19,
-      18,
-      23,
-      20,
-      21
+    "city": "Umeå",
+    "slug": "umea",
+    "units": [
+      {
+        "slug": "avion-shopping",
+        "name": "AVION Shopping",
+        "phoneNumber": "090-818 88",
+        "email": "umea@senstreetkitchen.se",
+        "address": {
+          "street": "AVION Shopping, Marknadsgatan 3",
+          "zipCode": "904 22",
+          "city": "Umeå",
+          "country": "Sweden"
+        },
+        "openingHours": [
+          "10-18",
+          "10-20",
+          "10-20",
+          "10-20",
+          "10-20",
+          "10-20",
+          "10-18"
+        ],
+        "cashless": true,
+        "tripadvisor": "https://www.tripadvisor.se/Restaurant_Review-g189818-d10154003-Reviews-SEN_Street_Kitchen-Umea_Vasterbotten_County.html",
+        "menu": [
+          1,
+          4,
+          5,
+          3,
+          12,
+          8,
+          2,
+          13,
+          6,
+          9,
+          11,
+          22,
+          24,
+          25,
+          26,
+          17,
+          15,
+          14,
+          16,
+          19,
+          18,
+          23,
+          20,
+          21
+        ]
+      },
+      {
+        "slug": "renmarkstorget-12",
+        "name": "Renmarkstorget 12",
+        "phoneNumber": "",
+        "email": "umecity@senstreetkitchen.se",
+        "address": {
+          "street": "Renmarkstorget 12",
+          "zipCode": "903 26",
+          "city": "Umeå",
+          "country": "Sweden"
+        },
+        "openingHours": [
+          "12-20",
+          "11-20",
+          "11-20",
+          "11-20",
+          "11-20",
+          "11-21",
+          "11-21"
+        ],
+        "cashless": true,
+        "foodora": null,
+        "menu": []
+      }
+    ]
+  },
+  {
+    "city": "Jönköping",
+    "slug": "jonkoping",
+    "units": [
+      {
+        "slug": "asecs",
+        "name": "Asecs",
+        "phoneNumber": "036-293 92 88",
+        "email": "asecs@senstreetkitchen.se",
+        "address": {
+          "street": "Kompanigatan 16",
+          "zipCode": "553 05",
+          "city": "Jönköping",
+          "country": "Sweden"
+        },
+        "openingHours": [
+          "11-17",
+          "10-20",
+          "10-20",
+          "10-20",
+          "10-20",
+          "10-20",
+          "10-18"
+        ],
+        "cashless": true,
+        "foodora": null,
+        "menu": [
+          1,
+          4,
+          5,
+          3,
+          12,
+          8,
+          2,
+          13,
+          6,
+          9,
+          11,
+          22,
+          24,
+          25,
+          26,
+          17,
+          15,
+          14,
+          16,
+          19,
+          18,
+          23,
+          20,
+          21
+        ]
+      }
     ]
   }
 ]
